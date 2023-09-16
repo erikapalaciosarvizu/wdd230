@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20x;
+    font-family: 'Mooli', sans-serif;
+    background-color: #fff;
+    color: #333;
+    
+}
+
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20x;
+}
+
+main h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+main h3 {
+    padding: 0 100px;
+    height: 50px;
+    background-color: #b23a48;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #b23a48;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+}
+
+img{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+nav {
+    padding: 0 100px;
+    height: 250px;
+    background-color:#e5989b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-links {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-align: center;
+    color: #8c2f39;
+    text-decoration: none;
+    padding: 15px;
+  }
+  
+  nav a:hover {
+    background-color: #8c2f39;
+    color: #fff;
+  }
+
+.card ul {
+    margin: 15px 15px 15px 15px;
+    list-style: none;
+}
+
+footer{
+    background-color: #b23a48;
+}
+
