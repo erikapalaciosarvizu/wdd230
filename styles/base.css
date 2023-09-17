@@ -21,6 +21,13 @@ main {
     margin: 0 auto;
 }
 
+.card {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
 main h2 {
     display: flex;
     align-items: center;
