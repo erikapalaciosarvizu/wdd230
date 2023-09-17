@@ -104,5 +104,11 @@ nav a {
 
 footer{
     background-color: #b23a48;
+    color: #fff;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
