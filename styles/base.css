@@ -102,7 +102,9 @@ nav a {
     list-style: none;
 }
 
-footer{
+
+
+.footer-custom{
     background-color: #b23a48;
     color: #fff;
     height: 100px;
