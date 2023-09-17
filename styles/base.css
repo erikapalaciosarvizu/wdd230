@@ -9,7 +9,6 @@
 body {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20x;
     font-family: 'Mooli', sans-serif;
     background-color: #fff;
     color: #333;
@@ -20,7 +19,6 @@ body {
 main {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20x;
 }
 
 main h2 {
