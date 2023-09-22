@@ -6,6 +6,20 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: #b23a48;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 70px;
+    margin: 10px;
+    order: -1; /* note: Esto coloca la imagen a la izquierda en todos los dispositivos */
+}
+
 body {
     max-width: 600px;
     margin: 0 auto;
@@ -87,7 +101,7 @@ nav {
 
 nav a {
     text-align: center;
-    color: #461220;
+    color: #000000;
     text-decoration: none;
     padding: 15px;
   }
@@ -105,8 +119,8 @@ nav a {
 
 
 .footer-custom{
-    background-color: #b23a48;
-    color: #fff;
+    background-color: #e5989b;
+    color: #000000;
     height: 100px;
     display: flex;
     flex-direction: column;
