@@ -1,0 +1,20 @@
+@media screen and (min-width: 500px) {
+  .div-activities {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /*primer columna ocupa dos espacios. segunda columna ocupa un espacio*/
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+  }
+  .div-title {
+    width: 100%;
+    height: 50px;
+  }
+
+  .erika-rules {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /*5= cuantas se va repetir, 1fr= numero de espacios que va a ocupar*/
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 500px) {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  header,
+  main,
+  footer {
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: #b23a48;
+  }
+
+  .div-activities-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+    background-color: #fff;
+  }
+
+  nav {
+    padding: 0 10px;
+    height: 300px;
+    background-color: #e5989b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
