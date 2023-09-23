@@ -1,0 +1,101 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  @import url("https://fonts.googleapis.com/css2?family=Diphylleia&family=Roboto&display=swap");
+  body,
+  h1,
+  h2,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Roboto, Arial, Helvetica;
+  }
+
+  header {
+    background-color: #003049;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Diphylleia, Arial, Helvetica, sans-serif;
+  }
+
+  header h1,
+  h2 {
+    margin: 10px;
+    padding: 5px;
+    font-family: Diphylleia, Arial, Helvetica, sans-serif;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+  }
+
+  .principle-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .principle-title {
+    background-color: #e36414;
+    color: #000000;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .webpage {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  /*imágenes */
+  .image-size {
+    width: 100%;
+    height: auto; /* Cambie height a 'auto' para mantener la proporción */
+    max-width: 100%; /* Evita que la imagen se estire más allá de su tamaño original */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #003049;
+  }
+
+  .principle-card:nth-child(3) {
+    grid-column: span 2; /* La ultima imagen abarca dos espacios*/
+  }
+
+  .paragraph {
+    margin: 10px;
+    padding: 15px;
+    color: #333;
+    font-family: Roboto, Arial, Helvetica;
+    text-align: justify;
+  }
+
+  .footer-custom {
+    font-family: Roboto, Arial, Helvetica;
+    background-color: #003049;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
