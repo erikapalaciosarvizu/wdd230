@@ -19,47 +19,69 @@
     <meta property="og:url" content="https://erikapalaciosarvizu.github.io/wdd230/index.html">
      
 </head>
-<body>
-    <header> 
-        <h1> Erika Palacios Arvizu</h1>
-        <img src="images/myphoto.png" alt="Profile Photo">
-    </header>
 
-    <nav class="erika-rules">
-        <a href="#">Home</a>
+<body>
+    <span class = "ham-button" onclick="openHamMenu()">&#9776;</span> <!-- Una etiqueta que se usa para interactuar con JS (span,button,a,li)-->
+    <div id="mySidenav" class="sidenav">  <!--La funcion openHamMenu se puede llamar como yo quiera-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
         <a href="chamber/siteplan.html" class="nav-link">Site Plan</a>
         <a href="chamber/" class="nav-link">Chamber</a>
         <a href="https://www.byui.edu/" class="nav-link">BYU-Idaho</a>
         <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=spa" class="nav-link">Scripture</a>
-    </nav>
+    </div>
+
+    <header> 
+        <h1> Erika Palacios Arvizu</h1>
+        <img src="images/myphoto.png" alt="Profile Photo">
+    </header>
+        
+    <nav class="erika-rules nav-desktop">
+        <a href="./index.html">Home</a>
+        <a href="chamber/siteplan.html" class="nav-link">Site Plan</a>
+        <a href="chamber/" class="nav-link">Chamber</a>
+        <a href="https://www.byui.edu/" class="nav-link">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=spa" class="nav-link">Scripture</a>
+    </nav> 
 
     <main>
         <div class="div-title">
             <h2>WDD 230: Web Frontend Development</h2>
         </div>
-<div class="div-activities">
+        
+        <div class="div-activities">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li> <a href="lesson01/holygrail.html">01: Holy Layout | JS Pen</a></li>
+                    <li> <a href="lesson02/design.html">02: Design Principles Document</a></li>
+                    <li> <a href="lesson01/media-query.html">03: Media Query</a></li>
+                    <li> <a href="lesson2/design-principles.html">04: Design Principles</a></li>
+                    <li> <a href="https://drive.google.com/file/d/1Koh9NYe3mQFI40kxQtxfKsqnhgudq4Ou/view?usp=drive_link">05: CSS Combinators</a></li>
+                    <li> <a href="https://codepen.io/Erika-Palacios/pen/PoXaovX">06: CSS Pseudo-elements</a></li>
+                    <li> <a href="https://codepen.io/Erika-Palacios/pen/XWoYJNg?editors=0100">07: Responsive "Hamburger" Menu</a></li>
+                    <li> <a href="#">08: </a></li>
+                    <li> <a href="#">09: </a></li>
+                    <li> <a href="#">10: </a></li>
+                </ul>
+            </section>
 
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li> <a href="lesson01/holygrail.html">01: Holy Layout | JS Pen</a></li>
-                <li> <a href="lesson02/design.html">02: Design Principles Document</a></li>
-                <li> <a href="lesson01/media-query.html">03: Media Query</a></li>
-                <li> <a href="lesson2/design-principles.html">04: Design Principles</a></li>
-                <li> <a href="https://drive.google.com/file/d/1Koh9NYe3mQFI40kxQtxfKsqnhgudq4Ou/view?usp=drive_link">05: CSS Combinators</a></li>
-                <li> <a href="https://codepen.io/Erika-Palacios/pen/PoXaovX">06: CSS Pseudo-elements</a></li>
-                <li> <a href="https://codepen.io/Erika-Palacios/pen/XWoYJNg?editors=0100">07: Responsive "Hamburger" Menu</a></li>
-                <li> <a href="#">08: </a></li>
-                <li> <a href="#">09: </a></li>
-                <li> <a href="#">10: </a></li>
-            </ul>
-        </section>
+                <section class="card">
+                    <h3> Information</h3>
+                </section>
+        </div>
 
-        <section class="card">
-            <h3> Information</h3>
+        <section>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7441.868227469531!2d-100.91608309928883!3d21.155020164382307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b3c037b45da91%3A0x31b943f4e3ce4942!2sDolores%20Hidalgo%20Cuna%20de%20la%20Independencia%20Nacional%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1696134783588!5m2!1ses-419!2smx" 
+            class="google-map"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         </section>
-</div>
     </main>
+
     <footer class="footer-custom">
         <p>&copy;  <span id="year"></span> | Erika Palacios Arvizu | Mexico</p>
         <p>This document was last modified:</p>
