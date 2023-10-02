@@ -1,29 +1,25 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marmelad&family=Roboto&display=swap");
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396e94;
-  --secondary-color: #e7c24f;
-  --accent1-color: #a42212;
-  --accent2-color: white;
+  --primary-color: #a4161a;
+  --secondary-color: #161a1d;
+  --accent1-color: #d3d3d3;
+  --accent2-color: #f5f3f4;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Marmelad";
+  --paragraph-font: Roboto, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396e94; /* headlines on a white background */
+  --headline-color-on-white: #0b090a; /* headlines on a white background */
   --headline-color-on-color: white; /* headlines on a colored background */
-  --paragraph-color-on-white: #396e94; /* paragraph text on a white background */
+  --paragraph-color-on-white: #0b090a; /* paragraph text on a white background */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
-  --paragraph-background-color: #396e94;
-  --nav-link-color: #396e94;
-  --nav-background-color: #d4ac0d;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396e94;
+  --paragraph-background-color: #161a1d;
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
@@ -40,6 +36,13 @@ img {
   margin: 0 auto;
   max-width: 300px;
 }
+
+.sitemap-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
 h1,
 h2,
 h3,
@@ -60,7 +63,7 @@ hr {
 header {
   padding: 1em;
   text-align: center;
-  color: var(--headline-color-on-color);
+  color: #161a1d;
   background-color: var(--paragraph-background-color);
 }
 header > h1,
@@ -102,7 +105,7 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 nav {
-  background-color: var(--nav-background-color);
+  background-color: #a4161a;
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
@@ -119,11 +122,11 @@ nav a {
 }
 nav a:link,
 nav a:visited {
-  color: var(--nav-link-color);
+  color: #fff;
 }
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: #fff;
+  background-color: #ba181b;
 }
 .sitemap {
   display: grid;
@@ -140,21 +143,7 @@ nav a:hover {
 .sitemap > div {
   text-align: center;
 }
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
-}
+
 .top {
   grid-area: top;
   border-left: 1px solid;
