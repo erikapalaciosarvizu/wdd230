@@ -5,22 +5,107 @@
     <meta name = "description" content="This is Erika Palacios Arvizu's Chamber Home Page for the course WDD 230 - Frontend Web Development.">
     <meta name = "author" content="Erika Palacios Arvizu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erika Palacios Arvizu - Chamber Website - WDD 230</title>
+    <title>Chamber Website - Erika Palacios Arvizu - WDD 230</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel = "stylesheet" href="styles/medium.css">
-    <link rel="icon" href="favicon.con">
+    <link rel="icon" href="favicon1.ico"> <!--Include a favicon for your chamber site.-->
+    <!--Add social media meta settings for the title, type, image, and url.-->
+    <meta property="og:title" content="Chamber Website - Erika Palacios Arvizu - WDD 230">
+
 </head>
 <body>
-    
+    <header class="hero">
+        <nav class="nav container"> <!-- Conteiner porque todo el contenido va a estar limitado a su respectiva seccion-->
+            <div class="nav_logo">
+                <h2 class="nav_title-page">Chamber of Commerce Dolores Hidalgo</h2>
+            </div>
+            <ul class="nav_link nav_link-menu">
+                <li class="nav_items">
+                    <a href="#" class="nav_links-menu">Home</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links-menu">Discover</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links-menu">Directory</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links-menu">Join</a>
+                </li>
+
+                </ul>
+                <!-- Menu haburguesa -->
+                <div class="nav_menu-hamburguesa">
+                    <span class = "ham-button" onclick="openHamMenu()">&#9776;</span>
+                </div>
+                
+        </nav>
+
+        <section class="hero_container container">
+            <h1 class="hero_title">Get to know our community of successful entrepreneurs and start growing.</h1>
+            <p>Strengthen your company, grow with us. More than 50 companies endorse it!</p>
+            <a href="#" class="cta">Join the Chamber</a>
+
+        </section>
+    </header>
+
+    <main>
+        <!--<section class="container about" SI AGREGO ESTO SE HACE RESPONSIVE>-->
+            <div class="about_main">
+                <article class="article_icons">
+                <h3 class="about_title">Code Primera</h3>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis fuga totam tenetur ipsa iure. Aut quae cumque itaque quos modi assumenda iure, incidunt deserunt architecto eaque a ullam nesciunt.</p>
+            </article>
+
+            <article class="article_icons">
+                <h3 class="about_title">Build a Treefort</h3>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis fuga totam tenetur ipsa iure. Aut quae cumque itaque quos modi assumenda iure, incidunt deserunt architecto eaque a ullam nesciunt.</p>
+            </article>
+            
+            <article class="article_icons">
+                <h3 class="about_title">Weather</h3>
+                <div id="ww_13b476a03b476" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl6031"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://wetterlang.de/koln_wetter_14_tage/" id="ww_13b476a03b476_u" target="_blank">wetterlang.de</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_13b476a03b476"></script>
+            </article>
+            </div>
+
+        <!--</section>-->
+
+        <section class="events">
+            <div class="events_container container">
+                <div class="events_text">
+                    <h2 class="subtitle">Events</h2>
+                    <p class="events_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque aliquid blanditiis doloribus sit quisquam cum, obcaecati accusamus natus dolore at beatae dolorem nesciunt recusandae voluptas, rerum aspernatur est rem!</p>
+                    <a href="#" class="cta">More info</a>
+                </div>
+
+                <figure class="events_picture">
+                    <img src="./images/Dolores-Hidalgo-Guanajuato.webp" alt="Centro de Dolores Hidalgo" class="events_img">
+                </figure>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer-custom">
+        <div class="footer_sections">
+        <article class="footer_elements">
+            <h3 class="footer_title">Dolores Hidalgo Chamber of Commerce</h3>
+            <p class="footer_paragraph">Calle Guerrero #156,<br /> Dolores Hidalgo Gto.</p>
+        </article>
+
+        <article class="footer_elements">
+            <p class="footer_title">info@dolorescoc.org<br /></p>
+            <p class="footer_paragraph">(+52) 418 1028 69</p>
+        </article>
+    </div>
+<div class=".last_modified">
+        <p>&copy;  <span id="year"></span> | Erika Palacios Arvizu | Mexico</p>
+        <p>This document was last modified:</p>
+        <p id="demo"></p>
+    </footer>
+    <script src="scripts/getdateschamber.js"></script>
+</div>
 </body>
 </html>
 
-
-
-<!-- 
-Add the standard head and meta content with valid title and description content.
-Add an author meta tag.
-Include a favicon for your chamber site.
-Add social media meta settings for the title, type, image, and url. Do not worry about 
-getting this exactly right as they can be adjusted later. -->

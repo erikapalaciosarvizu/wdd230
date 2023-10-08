@@ -5,10 +5,10 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #a4161a;
+  --primary-color: #003459;
   --secondary-color: #161a1d;
   --accent1-color: #d3d3d3;
-  --accent2-color: #f5f3f4;
+  --accent2-color: #fff;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Marmelad";
@@ -105,7 +105,7 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 nav {
-  background-color: #a4161a;
+  background-color: #161a1d;
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
@@ -126,7 +126,7 @@ nav a:visited {
 }
 nav a:hover {
   color: #fff;
-  background-color: #ba181b;
+  background-color: #4a5759;
 }
 .sitemap {
   display: grid;

@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Marmelad&family=Roboto&display=swap");
+
+:root {
+  /* Todos los elementos van a poder acceder a estas custom properties*/
+  --padding-container: 100px 0;
+  --color-title: ;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  /* Es el contenedor de mi pagina*/
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; /* Que todo lo que salga de este elemento se esconda*/
+  padding: var(--padding-container); /*referencia a mi :root*/
+}
+
+.hero {
+  width: 100%;
+  height: 100vh; /*medida del 100% del alto de la pantalla*/
+  min-width: 600px;
+  max-height: 800px; /*alto maximo para problemas en ipads o cosas asi*/
+  position: relative; /*para que un elemento se posicione completamente en este contenedor*/
+  display: grid; /*porque quiero crear dos filas*/
+  grid-template-rows: 100px 1fr; /*la primera fila de 100px y la segunda fila que tome el contenido sopbrante despued de los 100px*/
+  color: #fff;
+}
+
+.hero::before {
+  /*pseudelemento a partir de hero*/
+  content: ""; /*contenido vacio*/
+  position: absolute; /*para que se posicione absolutamente a su padre, que es hero*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #00000c 0%, #0000008c 100%),
+    url("../images/dolores-hidalgo-artesanos.jpeg"); /*degradado a una imagen*/
+  background-size: cover; /*con esto la imagen se adapta a la pagina*/
+  z-index: -1; /*MI TEXTO NO SE VEIA CUANDO PUSE EL HERO, CON ESTO SE ARREGLA*/
+}
+
+/*nav*/
+.nav {
+  --padding-container: 0;
+  height: 100%;
+  display: flex; /*poner a los elementos uno al lado del otro (el titulo y las opciones de navegacion en el nav)*/
+  align-items: center; /*para centrarlos verticalmente*/
+}
+
+/*logo "Chamber of Commerce Dolores Hidalgo"*/
+.nav_title-page {
+  font-weight: 300; /*para que el grosor de su letra sea mas delgado*/
+}
+
+.nav_link {
+  margin-left: auto; /*para que se pasen a la derecha*/
+  padding: 0;
+  display: grid; /*es un grid dentro de otra grid*/
+  grid-auto-flow: column; /*1. aqui le decimos que su flujo ahora sea en columnas para que se pongan una al lado de la otra*/
+  grid-auto-columns: max-content; /*2. pero que cada columna con mida por defecto su maximo contenido */
+  gap: 2em; /*3. y tenga un espaciado de 2m*/
+}
+
+.nav_items {
+  list-style: none; /*quita las vinetas de tipo lista*/
+}
+
+.nav_links-menu {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*COLOR DEL MENU NORMALITO*/
+.nav_items a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #4a5759;
+  padding: 5px;
+  border-radius: 20%;
+}
+
+/*MENU HAMBURGUESA*/
+.nav_menu-hamburguesa {
+  margin-left: auto;
+  display: none; /*asi no se ve hasta que este en dispositivo movil*/
+}
+
+.ham-button {
+  display: block;
+  width: 30px;
+  display: none; /*asi no se ve hasta que este en dispositivo movil*/
+}
+
+/* HERO CONTAINER */
+.hero_container {
+  /* Es el contenedor de mi seccion */
+  max-width: 800px;
+  display: grid;
+  --padding-container: 0; /* Quito el padding container */
+  grid-auto-rows: max-content; /* las filas que cree sean del maximo contenido y asi no ocupan mas de lo que deberian*/
+  align-content: center; /* 1. el contenido se alinea verticalmente*/
+  gap: 1em; /* 2. pero con un espaciado de 1em*/
+  padding: 100px; /* 3. un padding pa que no se pegue con otras cosas*/
+  text-align: center; /* 4. Que todo su texto se centre*/
+}
+
+.hero_title {
+  /* Es el titulo de mi pagina con el h1*/
+  font-size: 2.5rem;
+}
+
+.hero_paragraph {
+  margin-bottom: 20px; /* aunque tenga el gap, puede tener el margen un poco mas grande*/
+}
+
+.cta {
+  /* boton Join The chamber en le hero*/
+  display: inline-block;
+  background-color: #003459;
+  justify-self: center; /* esto hace que solo ocupe su contenido*/
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 25px;
+  border-radius: 32px;
+}
+
+/*About*/
+
+.about {
+  text-align: center; /* se centran en la pagina*/
+}
+
+.subtitle {
+  color: var(--color-title); /* la del inicio en mi root*/
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.about_paragraph {
+  line-height: 1.7;
+  margin: 15px;
+}
+
+.about_main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  width: 100%; /* o 90%*/
+  margin: 0 auto;
+  gap: 1em;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+.article_icons {
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+  width: 350px; /*ANCHO DE MIS COLUMNAS*/
+  overflow: hidden;
+  margin: 0 auto; /*sin esta wea no sirveee OMG*/
+  background-color: #e5e5f7;
+  border-radius: 10%;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.about_title {
+  margin: 20px;
+}
+
+.events {
+  background-color: #e5e5f7;
+  background-size: 10px 10px;
+  background-position: 0 0, 10px 10px;
+  overflow: hidden;
+}
+
+.events_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  align-items: center;
+}
+
+.events_picture {
+  max-width: 500px;
+}
+
+.events_paragraph {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.events_img {
+  width: 100%;
+  display: block;
+}
+
+/*fOOTER*/
+.footer-custom {
+  background-color: #003459;
+  color: #fff;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_sections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 60px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  overflow: hidden;
+  margin: 40px; /*sin esta wea no sirveee OMG*/
+}
+
+.last_modified {
+  margin: 15px;
+}
+
+@media (max-width: 768px) {
+  .nav_menu-hamburguesa {
+    display: block; /* Se muestra en dispositivos móviles */
+  }
+
+  .nav_link {
+    display: none; /* Se oculta el menú normal */
+  }
+
+  .ham-button {
+    display: block; /* Se muestra el botón de menú hamburguesa */
+  }
+
+  .about_main {
+    grid-template-columns: 1fr; /* Una columna para movil view */
+    gap: 1em; /* Espacio entre mis columnitas*/
+  }
+
+  .article_icons {
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-bottom: 1em; /* Espacio debajo de cada cajita */
+  }
+}
