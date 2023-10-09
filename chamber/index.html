@@ -37,9 +37,16 @@
 
                 </ul>
                 <!-- Menu haburguesa -->
-                <div class="nav_menu-hamburguesa">
-                    <span class = "ham-button" onclick="openHamMenu()">&#9776;</span>
-                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#">Discover</a>
+                    <a href="#">Directory</a>
+                    <a href="#">Join</a>
+                  </div>
+                  
+                <span class="sidenav_toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+               
                 
         </nav>
 
@@ -56,12 +63,18 @@
             <div class="about_main">
                 <article class="article_icons">
                 <h3 class="about_title">Code Primera</h3>
-                <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis fuga totam tenetur ipsa iure. Aut quae cumque itaque quos modi assumenda iure, incidunt deserunt architecto eaque a ullam nesciunt.</p>
+                <h4>After school coding!</h4>
+                <p class="about_paragraph">contact@codeprimera.com</p>
+                <p class="about_paragraph">+999-999-999</p>
+                <p class="about_paragraph">Website</p>
             </article>
 
             <article class="article_icons">
                 <h3 class="about_title">Build a Treefort</h3>
-                <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis fuga totam tenetur ipsa iure. Aut quae cumque itaque quos modi assumenda iure, incidunt deserunt architecto eaque a ullam nesciunt.</p>
+                <h4>Over 100 Plans!</h4>
+                <p class="about_paragraph">builda@treefort.com</p>
+                <p class="about_paragraph">+999-999-999</p>
+                <p class="about_paragraph">Website</p>
             </article>
             
             <article class="article_icons">
@@ -76,7 +89,8 @@
             <div class="events_container container">
                 <div class="events_text">
                     <h2 class="subtitle">Events</h2>
-                    <p class="events_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque aliquid blanditiis doloribus sit quisquam cum, obcaecati accusamus natus dolore at beatae dolorem nesciunt recusandae voluptas, rerum aspernatur est rem!</p>
+                    <h3 class="subtitle2">Ribbon Cutting - The Diamont Shack</h3>
+                    <p class="events_paragraph">Join us for the grand opening of The Diamond Shack, Thursday at 2:00 p.m.</p>
                     <a href="#" class="cta">More info</a>
                 </div>
 
@@ -96,15 +110,15 @@
 
         <article class="footer_elements">
             <p class="footer_title">info@dolorescoc.org<br /></p>
-            <p class="footer_paragraph">(+52) 418 1028 69</p>
+            <p class="footer_paragraph">(+52) 418 100 2769</p>
         </article>
     </div>
-<div class=".last_modified">
-        <p>&copy;  <span id="year"></span> | Erika Palacios Arvizu | Mexico</p>
-        <p>This document was last modified:</p>
-        <p id="demo"></p>
+    <footer>
+        <div class="last_modified">
+            <p>&copy;  <span id="year"></span> | Erika Palacios Arvizu | Mexico |  This document was last modified: <span id="lastModified"></span></p>
+        </div>
+        <script src="scripts/getdateschamber.js"></script>
     </footer>
-    <script src="scripts/getdateschamber.js"></script>
 </div>
 </body>
 </html>

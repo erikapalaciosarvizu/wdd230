@@ -5,17 +5,18 @@ document.querySelector("#year").textContent = currentYear.getFullYear();
 
 /* LAST MODIFIED */
 let text = document.lastModified;
-document.getElementById("demo").innerHTML = text;
+document.getElementById("lastModified").textContent = text;
 
 
 
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 
   
