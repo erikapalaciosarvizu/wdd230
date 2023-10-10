@@ -1,104 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Marmelad&family=Roboto&display=swap");
 
-:root {
-  /* Todos los elementos van a poder acceder a estas custom properties*/
-  --padding-container: 100px 0;
-  --color-title: ;
-}
-
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-.container {
-  /* Es el contenedor de mi pagina*/
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden; /* Que todo lo que salga de este elemento se esconda*/
-  padding: var(--padding-container); /*referencia a mi :root*/
+header {
+  display: flex; /* asi queda el titulo por un lado y el menu en el otro*/
+  align-items: center;
+  justify-content: space-between; /*Esto hace que mi logo quede a la izq y mi menu a la derecha*/
+  padding: 2rem; /*asi queda separado del borde*/
+  background-color: #003459;
 }
 
-.hero {
-  width: 100%;
-  height: 100vh; /*medida del 100% del alto de la pantalla*/
-  min-width: 600px;
-  max-height: 800px; /*alto maximo para problemas en ipads o cosas asi*/
-  position: relative; /*para que un elemento se posicione completamente en este contenedor*/
-  display: grid; /*porque quiero crear dos filas*/
-  grid-template-rows: 100px 1fr; /*la primera fila de 100px y la segunda fila que tome el contenido sopbrante despued de los 100px*/
-  color: #fff;
-}
-
-.hero::before {
-  /*pseudelemento a partir de hero*/
-  content: ""; /*contenido vacio*/
-  position: absolute; /*para que se posicione absolutamente a su padre, que es hero*/
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(180deg, #00000c 0%, #0000008c 100%),
-    url("../images/dolores-hidalgo-artesanos.jpeg"); /*degradado a una imagen*/
-  background-size: cover; /*con esto la imagen se adapta a la pagina*/
-  z-index: -1; /*MI TEXTO NO SE VEIA CUANDO PUSE EL HERO, CON ESTO SE ARREGLA*/
-}
-
-/*nav*/
-.nav {
-  --padding-container: 0;
-  height: 100%;
-  display: flex; /*poner a los elementos uno al lado del otro (el titulo y las opciones de navegacion en el nav)*/
-  align-items: center; /*para centrarlos verticalmente*/
-}
-
-/*logo "Chamber of Commerce Dolores Hidalgo"*/
 .nav_title-page {
-  font-weight: 300; /*para que el grosor de su letra sea mas delgado*/
-}
-
-.nav_link {
-  margin-left: auto; /*para que se pasen a la derecha*/
-  padding: 0;
-  display: grid; /*es un grid dentro de otra grid*/
-  grid-auto-flow: column; /*1. aqui le decimos que su flujo ahora sea en columnas para que se pongan una al lado de la otra*/
-  grid-auto-columns: max-content; /*2. pero que cada columna con mida por defecto su maximo contenido */
-  gap: 2em; /*3. y tenga un espaciado de 2m*/
-}
-
-.nav_items {
-  list-style: none; /*quita las vinetas de tipo lista*/
-}
-
-.nav_links-menu {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/*COLOR DEL MENU NORMALITO*/
-.nav_items a {
   color: #fff;
 }
 
-nav a:hover {
+.nav_logo {
+  max-width: 5rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex; /*para que se pongan los titulos del menu uno al lado del otrio*/
+  gap: 1rem; /*separa un poco los items entre si*/
+}
+
+.nav-list li a {
+  text-decoration: none; /*quita las lineas debajo de los items del menu*/
   color: #fff;
-  background-color: #4a5759;
-  padding: 5px;
 }
 
-/*MENU HAMBURGUESA*/
-.sidenav {
-  margin-left: auto;
-  display: none; /*asi no se ve hasta que este en dispositivo movil*/
+.abrir-menu,
+.cerrar-menu {
+  display: none;
 }
 
-.ham-button {
-  display: block;
-  width: 30px;
-  display: none; /*asi no se ve hasta que este en dispositivo movil*/
-}
-
-/* HERO CONTAINER */
+/* HERO */
 .hero_container {
   /* Es el contenedor de mi seccion */
   max-width: 800px;
@@ -111,13 +52,44 @@ nav a:hover {
   text-align: center; /* 4. Que todo su texto se centre*/
 }
 
-.hero_title {
-  /* Es el titulo de mi pagina con el h1*/
-  font-size: 2.5rem;
+.hero-principal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #0000009c 0%, #0000009c 100%),
+    url("../images/dolores-hidalgo-artesanos.jpeg");
+  background-size: cover;
+  z-index: -1;
 }
 
-.hero_paragraph {
-  margin-bottom: 20px; /* aunque tenga el gap, puede tener el margen un poco mas grande*/
+.hero-principal,
+.hero_container,
+.container-principal {
+  z-index: 1; /* Asegurate de que estas clases tengan un z-index más bajo */
+}
+
+.container-principal {
+  position: relative; /* Importante para posicionar el pseudo elemento .hero-principal::before */
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero-principal {
+  color: #fff;
+}
+
+.hero_title {
+  font-size: 3rem;
+}
+
+.hero-paragraph {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .cta {
@@ -131,39 +103,20 @@ nav a:hover {
   border-radius: 32px;
 }
 
-/*About*/
-
-.about {
-  text-align: center; /* se centran en la pagina*/
-}
-
-.subtitle {
-  color: var(--color-title); /* la del inicio en mi root*/
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.about_paragraph {
-  line-height: 1.7;
-  margin: 15px;
-}
-
-.about_main {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: grid;
-  width: 100%; /* o 90%*/
-  margin: 0 auto;
+/*SPOTLIGHTS*/
+.container-main {
+  text-align: center; /*se centran horizontalmente*/
+  display: flex;
   gap: 1em;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
+  margin: auto 0;
+  padding: 30px;
 }
 
-.article_icons {
+.article_cards {
   display: grid;
   gap: 1em;
   justify-items: center;
@@ -171,141 +124,158 @@ nav a:hover {
   overflow: hidden;
   margin: 0 auto; /*sin esta wea no sirveee OMG*/
   background-color: #e5e5f7;
-  border-radius: 10%;
+  border-radius: 5%;
   box-shadow: 10px 5px 5px grey;
 }
 
-.about_title {
-  margin: 20px;
+.subtitle {
+  font-family: Marmelad, Arial, Helvetica;
+  color: #000;
+  font-size: 2rem; /*EVENTS Y WEATHER*/
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-.events {
+.subtitle-main {
+  font-family: Marmelad, Arial, Helvetica;
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.about-paragraph {
+  line-height: 1.5;
+  color: #000;
+}
+
+/*EVENTS Y WEATHER*/
+.events-weather {
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.events-weather_column {
+  padding: 1.5em;
+}
+
+.column1 {
+  flex: 2; /* 2/3 del espacio total */
   background-color: #e5e5f7;
-  background-size: 10px 10px;
-  background-position: 0 0, 10px 10px;
-  overflow: hidden;
+  box-shadow: 10px 5px 5px grey;
 }
 
-.events_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
-  align-items: center;
+.column2 {
+  flex: 1; /* 1/3 del espacio total */
+  background-color: #e5e5f7;
+  box-shadow: 10px 5px 5px grey;
 }
 
-.events_picture {
-  max-width: 500px;
-}
-
-.events_paragraph {
-  line-height: 1.7;
-  margin-bottom: 15px;
-}
-
-.subtitle2 {
-  padding: 5px;
-  margin: 0 auto;
-}
-
-.events_img {
-  width: 100%;
-  display: block;
-}
-
-/*fOOTER*/
-.footer-custom {
-  background-color: #003459;
-  color: #fff;
-  height: 220px;
+/*FOOTER*/
+footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #112135;
+  color: #fff;
 }
 
-.footer_sections {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 60px;
-  grid-row-gap: 0px;
-  justify-items: center;
-  overflow: hidden;
-  margin: 40px; /*sin esta wea no sirveee OMG*/
+.footer-row {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
-.last_modified {
-  margin: 15px;
+.footer-line {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.sidenav_toggle {
-  display: none; /* Se oculta por defecto */
-}
-
-@media (max-width: 768px) {
-  .sidenav_toggle {
-    /* Se muestra en dispositivos móviles - NO ENTIENDO PK PERO JALA*/
+@media (max-width: 550px) {
+  /*MENU HAMBURGUESA*/
+  .abrir-menu,
+  .cerrar-menu {
     display: block;
-  }
-  .sidenav {
-    display: block; /* Se muestra en dispositivos móviles */
-  }
-
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
   }
 
-  .nav_link {
-    display: none; /* Se oculta el menú normal */
+  .abrir-menu {
+    color: #ececec;
   }
 
-  .ham-button {
-    display: block; /* Se muestra el botón de menú hamburguesa */
+  .cerrar-menu {
+    color: #ececec;
+  }
+  .nav {
+    /*ESTILIZAR LA NAV BAR*/
+    opacity: 0;
+    visibility: hidden; /*asi le podemos poner alguna animacion*/
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0; /*esto lo pasa a la derecha*/
+    bottom: 0; /*esto extiende el menu hamb hasta abajo*/
+    background-color: #000;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); /*esto oscurece el fondo cuando abrimos el menu hamb*/
+    z-index: 1000; /*esto hizo que mi hero quedara abajo dle menu hamburguesa*/
   }
 
-  .about_main {
-    grid-template-columns: 1fr; /* Una columna para movil view */
-    gap: 1em; /* Espacio entre mis columnitas*/
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
   }
 
-  .article_icons {
-    margin: 0 auto; /* Centrar horizontalmente */
-    margin-bottom: 1em; /* Espacio debajo de cada cajita */
+  .nav-list {
+    flex-direction: column; /*poner un item abajo del otro, ya tenia display flex arriba*/
+    align-items: end; /*los alinea a la derecha */
+  }
+
+  .nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .nav-list li a {
+    text-decoration: none; /*quita las lineas debajo de los items del menu*/
+    color: #fff;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  .last_modified {
+    text-align: center;
+  }
+
+  .hero_title {
+    font-size: 2.5rem;
+  }
+
+  /*SPOTLIGHTS*/
+  .container-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .article_cards {
+    width: 50%; /* 2 columnas */
+    margin-bottom: 0;
   }
 }
