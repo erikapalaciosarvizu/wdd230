@@ -5,6 +5,11 @@
     grid-template-rows: 1fr;
     grid-gap: 1rem;
   }
+
+  .activities-links a {
+    margin-top: 10px; /* Agrega un margen inferior entre los enlaces si lo deseas */
+  }
+
   .div-title {
     width: 100%;
     height: 50px;
