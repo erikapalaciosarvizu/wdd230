@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Images</title>
+    <meta property="og:title" content="Responsive Images: srcset - Erika Palacios Arvizu - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is Erika Palacios Arvizu's Responsive Images: srcset Activity for the course WDD 230 - Frontend Web Development.">
+    <meta property="og:url" content="https://erikapalaciosarvizu.github.io/wdd230/chamber/">
 </head>
 <body>
     <main>
         <div class="hero">
-          <picture>
+<picture>
+  <source srcset="images/hero-small.webp.webp" media="(max-width: 600px)">
+  <source srcset="images/hero-medium.webp.webp" media="(max-width: 1000px)">
+  <img src="images/hero-large.webp.webp" width="1500" height="750" alt="San Diego, California Temple">
+</picture>
+
+<!-- 
+
+            <img src="images/hero-large.webp.jpg" alt="table setting" width="1500" height="750">
             <source srcset="images/hero-small.webp.jpg" media="(max-width: 500px)">
             <source srcset="images/hero-medium.webp.jpg" media="(max-width: 1000px)">
-            <img src="images/hero-large.webp.jpg" alt="table setting" width="1500" height="750">
-          </picture>
+            <span> San Diego, California Temple</span>
+ -->
         </div>
       </main>
 </body>
