@@ -59,10 +59,19 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg, #0000009c 0%, #0000009c 100%),
-    url("../images/dolores-hidalgo-artesanos.jpeg");
-  background-size: cover;
+  background: linear-gradient(180deg, #0000009c 0%, #0000009c 100%);
   z-index: -1;
+}
+
+.hero-principal img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2; /* Asegúraese que de que el z-index sea menor que el del gradiente */
 }
 
 .hero-principal,
