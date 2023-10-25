@@ -20,6 +20,14 @@ img {
   order: -1; /* note: Esto coloca la imagen a la izquierda en todos los dispositivos */
 }
 
+/*IMAGEN DEL TEMPLO*/
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 100vh; /* Asegura que la imagen no sea más grande que la altura de la pantalla */
+}
+
 body {
   margin: 0 auto;
   padding: 10px;
