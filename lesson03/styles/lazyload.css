@@ -15,6 +15,14 @@ img {
   animation: fade 15s;
 }
 
+.footer-lazy {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  background-color: #ffc8dd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
