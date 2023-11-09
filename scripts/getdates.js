@@ -8,6 +8,27 @@ let text = document.lastModified;
 document.getElementById("demo").innerHTML = text;
 
 
+
+// PAGE VISITS ----------------------
+
+const visitsDisplay = document.querySelector(".visits");
+
+let numbOfVisits = Number(window.localStorage.getItem("numberOfVisits")) || 0;
+
+if (numbOfVisits !== 0) {
+	visitsDisplay.textContent = numbOfVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit. 🥳`;
+}
+
+numbOfVisits++;
+
+localStorage.setItem("numberOfVisits", numbOfVisits);
+
+
+
+
+// HAMBURGER MENU ------------------
 function openHamMenu() { //La funcion openHamMenu se puede llamar como yo quiera
 	document.getElementById("mySidenav").style.width = "250px";
 	//document = objeto que me permite acceder a los objetos del HTML.
@@ -20,4 +41,5 @@ function openHamMenu() { //La funcion openHamMenu se puede llamar como yo quiera
 	document.getElementById("mySidenav").style.width = "0";
   }
 
+  
   
