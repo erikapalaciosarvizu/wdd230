@@ -225,14 +225,12 @@ footer {
   width: 100%;
 }
 
-/* Estilos para el modo oscuro */
+/* DARK MODE*/
 .dark-mode {
   background-color: #121212;
   color: #ffffff;
-  /* Añade aquí cualquier otro estilo que quieras cambiar en el modo oscuro */
 }
 
-/* Puedes especificar estilos para elementos específicos en modo oscuro así */
 .dark-mode .subtitle,
 .dark-mode .subtitle-main,
 .dark-mode .about-paragraph,
@@ -243,7 +241,98 @@ footer {
   color: #ffffff;
 }
 
-@media (max-width: 550px) {
+/* D I S C O V E R  S E C T I O N*/
+
+/*Sección principal */
+.container-main {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos (izquierda y derecha) */
+  padding: 10px;
+}
+
+/* Sección de imágenes Discover */
+.discover-images {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+figure {
+  position: relative; /* Asegura que la posición relativa funcione para el posicionamiento absoluto del figcaption */
+}
+
+figure img {
+  display: block; /* Esto hace que la imagen sea un elemento de bloque para controlar mejor su tamaño */
+  max-width: 100%; /* Esto hace que la imagen no se extienda más allá de su contenedor */
+}
+
+.discover-images figure {
+  margin: 10px 20px;
+}
+
+figcaption {
+  position: absolute; /* Posición absoluta para que se superponga a la imagen*/
+  bottom: 0; /* Coloca la leyenda en la parte inferior de la figura*/
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Esto pone un fondo semi-transparente para mejorar la legibilidad del texto*/
+  color: #fff; /* Color del texto de la caption*/
+  padding: 8px;
+  max-width: 100%; /* Establece el ancho máximo al 100% del contenedor- la imagen*/
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+.discover-sidebar-content {
+  margin-top: 10px;
+  flex: 1; /* Que ocupe el espacio restante */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*Se centran horizontalmente */
+  justify-content: flex-start; /* Alinea los elementos arriba */
+  gap: 20px; /* Espaciado entre elementos de la sidebar */
+  width: 300px; /* Ancho específico para que ajuste con el calendario*/
+}
+
+/* Google Maps dicover*/
+.google-map {
+  width: 100%; /* Ancho del 100% para que ocupe todo el ancho del contenedor */
+  max-width: 600px; /* Establece un ancho máximo*/
+  height: 600px; /* Ajusta la altura */
+}
+
+.discover-information h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.demographic-data h2 {
+  font-family: Marmelad, Arial, Helvetica;
+  padding: 10px;
+}
+
+.demographic-data p {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  /*DISCOVER SECTION*/
+
+  main {
+    flex-direction: column;
+  }
+
+  .discover-images {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
   /*MENU HAMBURGUESA*/
   .abrir-menu,
   .cerrar-menu {
