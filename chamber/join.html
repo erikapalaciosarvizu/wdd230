@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="This is Erika Palacios Arvizu's Chamber Home Page for the course WDD 230 - Frontend Web Development.">
+    <meta name="description"
+        content="This is Erika Palacios Arvizu's Chamber Home Page for the course WDD 230 - Frontend Web Development.">
     <meta name="author" content="Erika Palacios Arvizu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber Website - Erika Palacios Arvizu - WDD 230</title>
@@ -10,14 +12,16 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="icon" href="favicon1.ico"> <!--Include a favicon for your chamber site.-->
-    <!--Add social media meta settings for the title, type, image, and url.-->
+    <link rel="icon" href="favicon1.ico">
     <meta property="og:title" content="Chamber Website - Erika Palacios Arvizu - WDD 230">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="This is Erika Palacios Arvizu's chamber of commerce for the course WDD 230 - Frontend Web Development.">
-    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.infohostal.com%2Fguia%2Fguanajuato%2Fdoloreshidalgo%2Falojamiento%2F195960%2Flaribera.html&psig=AOvVaw3ovBnIzEsCqFQ3Q2AcZLW4&ust=1697009981547000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJji6Yf96oEDFQAAAAAdAAAAABAJ">
+    <meta property="og:description"
+        content="This is Erika Palacios Arvizu's chamber of commerce for the course WDD 230 - Frontend Web Development.">
+    <meta property="og:image"
+        content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.infohostal.com%2Fguia%2Fguanajuato%2Fdoloreshidalgo%2Falojamiento%2F195960%2Flaribera.html&psig=AOvVaw3ovBnIzEsCqFQ3Q2AcZLW4&ust=1697009981547000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJji6Yf96oEDFQAAAAAdAAAAABAJ">
     <meta property="og:url" content="https://erikapalaciosarvizu.github.io/wdd230/chamber/">
 </head>
+
 <body>
     <header class="hero">
         <h2 class="nav_title-page">Chamber of Commerce Dolores Hidalgo</h2>
@@ -35,34 +39,97 @@
                     <a href="#" class="nav_links-menu">Directory</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav_links-menu">Join</a>
-                </li>               
+                    <a href="./join.html" class="nav_links-menu">Join</a>
+                </li>
             </ul>
-        </nav> 
-         <button id="darkModeToggle">Dark mode</button>     
+        </nav>
+        <button id="darkModeToggle">Dark mode</button>
     </header>
 
-    <section class="hero-principal hero_container container-principal">
-        <picture>
-            <source srcset="images/wdd230-org-small.webp" media="(max-width: 600px)">
-            <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
-            <img src="images/dolores-hidalgo-artesanos.jpeg" alt="WDD230 image" class="hero-image">
-        </picture>
-        <h1 class="hero_title">Get to know our community of successful entrepreneurs and start growing.</h1>
-        <p class="hero-paragraph">Strengthen your company, grow with us. More than 50 companies endorse it!</p>
-        <a href="#" class="cta">Join the Chamber</a>
-    </section>
+    <main class="two-column-layout">
+        <section class="membership-benefits">
+            <h1>Membership Benefits</h1>
+            <br>
+            <h3>NP (Nonprofit) Membership:</h3>
+            <p>
+                • Free of Charge: Enjoy the basic benefits of chamber membership without any cost. <br>
+                • Networking Opportunities: Connect with other nonprofit organizations to share resources and collaborate on common goals.<br>
+                • Basic Listing: Get listed on the chamber's website.<br>
+                <br>
+            </p>
 
+            <div class="membership-level">
+            <h3>Bronze Membership:</h3>
+            <p>
+                Cost: $50.00
+                • Networking Events: Participate in exclusive networking events to build relationships with fellow businesses and potential clients.<br>
+                • Online Promotion: Basic listing upgraded to include a brief business description.<br>
+                • Educational Workshops: Attend specialized workshops and training sessions at a discounted rate.<br>
+                • Event Discounts: Receive discounts on chamber-sponsored events.<br>
+                <br>
+            </p>
 
+            <h3>Silver Membership:</h3>
+            <p>
+                Cost: $100.00
+                • Enhanced Visibility: Featured placement on the chamber's website and promotional materials.<br>
+                • Event Sponsorship Opportunities: Showcase your business by sponsoring chamber events, gaining exposure to a broader audience.<br>
+                • Business Referrals: Priority referrals from the chamber and fellow members..<br>
+                • Access to Premium Resources: Exclusive access to premium resources, industry reports, and market insights.<br>
+                • Training Workshops: Complimentary attendance at select training workshops.
+                <br>
+            </p>
+            <br>
+            <h3>Gold Membership:</h3>
+            <p>
+                Cost: $200.00
+                • Top-Tier Networking: Connect with influential business leaders and decision-makers in the community through exclusive events.<br>
+                • Priority Event Access: VIP treatment and priority access at chamber events, maximizing your networking opportunities.<br>
+                • Customized Marketing: Personalized marketing support, including featured articles, social media promotion, and tailored marketing campaigns.<br>
+                • Board Representation: Opportunity for representation on the chamber's board, allowing your business a voice in shaping local business policies.<br>
+                • Spotlight Position: Prime advertising space on the chamber's home page.
+            </p>
 
-<main>
-   
+        </div>
+    </fieldset>
 
+        </section>
 
+        <form method="get" action="thankyou.html">
+            <h1>Membership Application</h1>
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Title/Position* <input type="text" name="position" id="position" required pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 characters, including only letters, spaces, and hyphens"></label>
+                <label>Email* <input type="email" name="email" id="email" placeholder="someone@example.com" required></label>
+                <label>Phone* <input type="tel" name="phone" id="phone" required></label>
+                <label>Organization Name* <input type="text" name="organization" id="organization" required></label>
+            </fieldset>
 
-</main>
-
-
+            <!-- Membership Level -->
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label>Select Membership Level
+                    <select name="membership_level" id="membership_level">
+                        <option value="">Please Select</option>
+                        <option value="np">NP Membership (No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend>Business/Organization Description</legend>
+                    <label>Description* <textarea name="description" id="description" required></textarea></label>
+                </fieldset>
+    
+                <input type="hidden" name="submission_time" id="submission_time">
+    
+                <input type="submit" value="Submit My Application" class="submitBtn">
+            </form>
+        </main>
+    
 
     <footer>
         <div class="footer-row">
@@ -74,9 +141,11 @@
             <p>(+52) 418 100 2769</p>
         </div>
         <div class="last_modified">
-            <p>&copy;  <span id="year"></span> | Erika Palacios Arvizu | Mexico |  This document was last modified: <span id="lastModified"></span></p>
+            <p>&copy; <span id="year"></span> | Erika Palacios Arvizu | Mexico | This document was last modified:
+                <span id="lastModified"></span></p>
         </div>
         <script src="scripts/getdateschamber.js"></script>
     </footer>
 </body>
+
 </html>

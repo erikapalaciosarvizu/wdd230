@@ -79,3 +79,6 @@ darkModeToggle.addEventListener("click", () => {
 
   // llama el displayMessage en la pag
   displayMessage();
+
+
+document.getElementById("submission_time").value = Date.now();
