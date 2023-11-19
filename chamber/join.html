@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is Erika Palacios Arvizu's Chamber Home Page for the course WDD 230 - Frontend Web Development.">
+    <meta name="author" content="Erika Palacios Arvizu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Website - Erika Palacios Arvizu - WDD 230</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="favicon1.ico"> <!--Include a favicon for your chamber site.-->
+    <!--Add social media meta settings for the title, type, image, and url.-->
+    <meta property="og:title" content="Chamber Website - Erika Palacios Arvizu - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is Erika Palacios Arvizu's chamber of commerce for the course WDD 230 - Frontend Web Development.">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.infohostal.com%2Fguia%2Fguanajuato%2Fdoloreshidalgo%2Falojamiento%2F195960%2Flaribera.html&psig=AOvVaw3ovBnIzEsCqFQ3Q2AcZLW4&ust=1697009981547000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJji6Yf96oEDFQAAAAAdAAAAABAJ">
+    <meta property="og:url" content="https://erikapalaciosarvizu.github.io/wdd230/chamber/">
+</head>
+<body>
+    <header class="hero">
+        <h2 class="nav_title-page">Chamber of Commerce Dolores Hidalgo</h2>
+        <button id="abrir" class="abrir-menu">&#9776;</button>
+        <nav class="nav container" id="nav">
+            <button class="cerrar-menu" id="cerrar">&#10006;</button>
+            <ul class="nav-list">
+                <li class="nav_items">
+                    <a href="./index.html" class="nav_links-menu">Home</a>
+                </li>
+                <li class="nav_items">
+                    <a href="./discover.html" class="nav_links-menu">Discover</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links-menu">Directory</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links-menu">Join</a>
+                </li>               
+            </ul>
+        </nav> 
+         <button id="darkModeToggle">Dark mode</button>     
+    </header>
+
+    <section class="hero-principal hero_container container-principal">
+        <picture>
+            <source srcset="images/wdd230-org-small.webp" media="(max-width: 600px)">
+            <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
+            <img src="images/dolores-hidalgo-artesanos.jpeg" alt="WDD230 image" class="hero-image">
+        </picture>
+        <h1 class="hero_title">Get to know our community of successful entrepreneurs and start growing.</h1>
+        <p class="hero-paragraph">Strengthen your company, grow with us. More than 50 companies endorse it!</p>
+        <a href="#" class="cta">Join the Chamber</a>
+    </section>
+
+
+
+<main>
+   
+
+
+
+</main>
+
+
+
+    <footer>
+        <div class="footer-row">
+            <p>Dolores Hidalgo Chamber of Commerce</p>
+            <p>Calle Guerrero #156, Dolores Hidalgo Gto.</p>
+        </div>
+        <div class="footer-row">
+            <p>info@dolorescoc.org</p>
+            <p>(+52) 418 100 2769</p>
+        </div>
+        <div class="last_modified">
+            <p>&copy;  <span id="year"></span> | Erika Palacios Arvizu | Mexico |  This document was last modified: <span id="lastModified"></span></p>
+        </div>
+        <script src="scripts/getdateschamber.js"></script>
+    </footer>
+</body>
+</html>
