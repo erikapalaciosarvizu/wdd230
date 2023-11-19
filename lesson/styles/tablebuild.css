@@ -3,6 +3,11 @@ body {
   background-color: #f4f4f4;
 }
 
+.company-header {
+  text-align: center;
+  font-weight: bold;
+}
+
 table {
   width: 80%;
   margin: 20px auto;
