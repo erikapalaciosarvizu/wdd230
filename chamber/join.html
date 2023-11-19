@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="This is Erika Palacios Arvizu's Chamber Home Page for the course WDD 230 - Frontend Web Development.">
+    <meta name="description" content="This is Erika Palacios Arvizu's Chamber Home Page for the course WDD 230 - Frontend Web Development.">
     <meta name="author" content="Erika Palacios Arvizu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber Website - Erika Palacios Arvizu - WDD 230</title>
@@ -15,10 +14,8 @@
     <link rel="icon" href="favicon1.ico">
     <meta property="og:title" content="Chamber Website - Erika Palacios Arvizu - WDD 230">
     <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="This is Erika Palacios Arvizu's chamber of commerce for the course WDD 230 - Frontend Web Development.">
-    <meta property="og:image"
-        content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.infohostal.com%2Fguia%2Fguanajuato%2Fdoloreshidalgo%2Falojamiento%2F195960%2Flaribera.html&psig=AOvVaw3ovBnIzEsCqFQ3Q2AcZLW4&ust=1697009981547000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJji6Yf96oEDFQAAAAAdAAAAABAJ">
+    <meta property="og:description" content="This is Erika Palacios Arvizu's chamber of commerce for the course WDD 230 - Frontend Web Development.">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.infohostal.com%2Fguia%2Fguanajuato%2Fdoloreshidalgo%2Falojamiento%2F195960%2Flaribera.html&psig=AOvVaw3ovBnIzEsCqFQ3Q2AcZLW4&ust=1697009981547000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJji6Yf96oEDFQAAAAAdAAAAABAJ">
     <meta property="og:url" content="https://erikapalaciosarvizu.github.io/wdd230/chamber/">
 </head>
 
@@ -46,6 +43,7 @@
         <button id="darkModeToggle">Dark mode</button>
     </header>
 
+    <!-- Membership Benefitts -->
     <main class="two-column-layout">
         <section class="membership-benefits">
             <h1>Membership Benefits</h1>
@@ -58,40 +56,40 @@
                 <br>
             </p>
 
-            <div class="membership-level">
-            <h3>Bronze Membership:</h3>
-            <p>
-                Cost: $50.00
-                • Networking Events: Participate in exclusive networking events to build relationships with fellow businesses and potential clients.<br>
-                • Online Promotion: Basic listing upgraded to include a brief business description.<br>
-                • Educational Workshops: Attend specialized workshops and training sessions at a discounted rate.<br>
-                • Event Discounts: Receive discounts on chamber-sponsored events.<br>
-                <br>
-            </p>
+            <fieldset>
+                <div class="membership-level">
+                    <h3>Bronze Membership:</h3>
+                    <p>
+                        Cost: $50.00
+                        • Networking Events: Participate in exclusive networking events to build relationships with fellow businesses and potential clients.<br>
+                        • Online Promotion: Basic listing upgraded to include a brief business description.<br>
+                        • Educational Workshops: Attend specialized workshops and training sessions at a discounted rate.<br>
+                        • Event Discounts: Receive discounts on chamber-sponsored events.<br>
+                        <br>
+                    </p>
 
-            <h3>Silver Membership:</h3>
-            <p>
-                Cost: $100.00
-                • Enhanced Visibility: Featured placement on the chamber's website and promotional materials.<br>
-                • Event Sponsorship Opportunities: Showcase your business by sponsoring chamber events, gaining exposure to a broader audience.<br>
-                • Business Referrals: Priority referrals from the chamber and fellow members..<br>
-                • Access to Premium Resources: Exclusive access to premium resources, industry reports, and market insights.<br>
-                • Training Workshops: Complimentary attendance at select training workshops.
-                <br>
-            </p>
-            <br>
-            <h3>Gold Membership:</h3>
-            <p>
-                Cost: $200.00
-                • Top-Tier Networking: Connect with influential business leaders and decision-makers in the community through exclusive events.<br>
-                • Priority Event Access: VIP treatment and priority access at chamber events, maximizing your networking opportunities.<br>
-                • Customized Marketing: Personalized marketing support, including featured articles, social media promotion, and tailored marketing campaigns.<br>
-                • Board Representation: Opportunity for representation on the chamber's board, allowing your business a voice in shaping local business policies.<br>
-                • Spotlight Position: Prime advertising space on the chamber's home page.
-            </p>
-
-        </div>
-    </fieldset>
+                    <h3>Silver Membership:</h3>
+                    <p>
+                        Cost: $100.00
+                        • Enhanced Visibility: Featured placement on the chamber's website and promotional materials.<br>
+                        • Event Sponsorship Opportunities: Showcase your business by sponsoring chamber events, gaining exposure to a broader audience.<br>
+                        • Business Referrals: Priority referrals from the chamber and fellow members..<br>
+                        • Access to Premium Resources: Exclusive access to premium resources, industry reports, and market insights.<br>
+                        • Training Workshops: Complimentary attendance at select training workshops.
+                        <br>
+                    </p>
+                    <br>
+                    <h3>Gold Membership:</h3>
+                    <p>
+                        Cost: $200.00
+                        • Top-Tier Networking: Connect with influential business leaders and decision-makers in the community through exclusive events.<br>
+                        • Priority Event Access: VIP treatment and priority access at chamber events, maximizing your networking opportunities.<br>
+                        • Customized Marketing: Personalized marketing support, including featured articles, social media promotion, and tailored marketing campaigns.<br>
+                        • Board Representation: Opportunity for representation on the chamber's board, allowing your business a voice in shaping local business policies.<br>
+                        • Spotlight Position: Prime advertising space on the chamber's home page.
+                    </p>
+                </div>
+            </fieldset>
 
         </section>
 
@@ -123,13 +121,12 @@
                     <legend>Business/Organization Description</legend>
                     <label>Description* <textarea name="description" id="description" required></textarea></label>
                 </fieldset>
-    
+
                 <input type="hidden" name="submission_time" id="submission_time">
-    
                 <input type="submit" value="Submit My Application" class="submitBtn">
-            </form>
-        </main>
-    
+            </fieldset>
+        </form>
+    </main>
 
     <footer>
         <div class="footer-row">
