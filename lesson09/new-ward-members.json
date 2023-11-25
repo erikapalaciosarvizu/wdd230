@@ -1,0 +1,37 @@
+{
+    "lastName" : "Palacios",
+    "movingDate" : "16 November 2020",
+    "numberMembersOfTheFamily" : 5,
+    "wisitedByBishopric" : "No",
+    "membersOfTheFamily":[
+    {
+        "name": "Antonio",
+        "gender" : "Male",
+        "dateOfBirth" : "14 June 1970"
+    },
+
+    {
+        "name": "Esperanza",
+        "gender" : "Female",
+        "dateOfBirth" : "14 February 1978"
+    },
+
+    {
+        "name": "Erika",
+        "gender" : "Female",
+        "dateOfBirth" : "08 April 1999"
+    },
+
+    {
+        "name": "Epi",
+        "gender" : "Male",
+        "dateOfBirth" : "24 December 2000"
+    },
+
+    {
+        "name": "Emilio",
+        "gender" : "Male",
+        "dateOfBirth" : "04 September 2004"
+    }
+    ]
+}
