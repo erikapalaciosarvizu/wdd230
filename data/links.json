@@ -16,24 +16,23 @@
         },
 
         {
-            "lesson" : "03",
-            "links" : [ 
+            "lesson": "03",
+            "links": [ 
                 {
-                "url": "https://drive.google.com/file/d/1Koh9NYe3mQFI40kxQtxfKsqnhgudq4Ou/view?usp=drive_link",
-                "title": "CSS Combinators"
+                    "url": "https://drive.google.com/file/d/1Koh9NYe3mQFI40kxQtxfKsqnhgudq4Ou/view?usp=drive_link",
+                    "title": "CSS Combinators"
                 },
-
                 {
                     "url": "https://codepen.io/Erika-Palacios/pen/PoXaovX",
                     "title": "CSS Pseudo-elements"
-                }
-
+                },
                 {
                     "url": "https://codepen.io/Erika-Palacios/pen/XWoYJNg?editors=0100",
                     "title": "Responsive 'Hamburger' Menu"
                 }
             ]
         },
+        
 
         {
             "lesson" : "04",
@@ -114,13 +113,13 @@
             "lesson" : "10",
             "links" : [ 
                 {
-                "url": "none",
-                "title": "none"
+                "url": "",
+                "title": ""
                 },
 
                 {
-                    "url": "none",
-                    "title": "none"
+                    "url": "",
+                    "title": ""
                 }
             ]
         },

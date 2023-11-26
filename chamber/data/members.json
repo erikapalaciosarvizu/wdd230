@@ -1,0 +1,71 @@
+{
+    "members": [
+      {
+        "name": "Muebleria ZAX",
+        "address": "Av. Principal #123, Col. Centro, Dolores Hidalgo, Gto., México",
+        "phone": "+52 418555-1234",
+        "website": "http://www.muebleriazax.mx",
+        "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100083170346616&tbnid=Lf-qJTdl2ZxoIM&vet=12ahUKEwjtuLj21OCCAxVoKtAFHXs1DukQMygAegQIARA1..i&imgrefurl=https%3A%2F%2Fm.facebook.com%2Fp%2FZAX-Muebler%25C3%25ADas-100083170346616%2F&docid=zmFGAF_J0UgH4M&w=600&h=600&q=mueblerias%20zax&ved=2ahUKEwjtuLj21OCCAxVoKtAFHXs1DukQMygAegQIARA1",
+        "membership_level": "Gold"
+
+      },
+      {
+        "name": "Regalos y Accesorios el Divan",
+        "address": "Calle Roble #456, Col. Reforma, Dolores Hidalgo, Gto., México",
+        "phone": "+52 418-555-5678",
+        "website": "http://www.regalosyaccesorioseldivan.com",
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fp%2FEL-DIVAN-100057319395312%2F%3Flocale%3Des_LA&psig=AOvVaw0CjN_68PgqY37o4_vRKQn8&ust=1701053772482000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDepKDV4IIDFQAAAAAdAAAAABAE",
+        "membership_level": "Silver"
+
+      },
+      {
+        "name": "HOTEL EL RELICARIO",
+        "address": "De Los Heroes 12, La Erre, Dolores Hidalgo, Guanajuato, México",
+        "phone": "+52 418-555-9012",
+        "website": "https://www.hotelelrelicario.com/",
+        "image": "https://www.facebook.com/photo/?fbid=724030299749589&set=a.445573487595273&locale=es_LA",
+        "membership_level": "Bronze"
+      },
+
+      {
+        "name": "Restaurante La Casona",
+        "address": "Guanajuato 9, La Erre, Dolores Hidalgo, Guanajuato, México",
+        "phone": "+52 (418)185-0112",
+        "website": "http://www.lacasona.mx",
+        "image": "https://www.tripadvisor.com.mx/Restaurant_Review-g3343018-d13961352-Reviews-La_Casona_Restaurante-Guadalupe_Northern_Mexico.html#photos;aggregationId=&albumid=101&filter=7&ff=457527238",
+        "membership_level": "Silver"
+      },
+
+      {
+        "name": "Tecnología Innovadora",
+        "address": "Av. Abedul #202, Col. Tecnológica, Dolores Hidalgo, Gto., México",
+        "phone": "+52 473-555-7890",
+        "website": "http://www.tec-innovadora.com",
+        "image": "tec_logotipo.jpg",
+        "membership_level": "Oro",
+        "other_info": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+
+      {
+        "name": "Soluciones de Energía Verde",
+        "address": "Cedro Verde #303, Col. Ambiental, Dolores Hidalgo, Gto., México",
+        "phone": "+52 473-555-2345",
+        "website": "http://www.energia-verde.mx",
+        "image": "verde_logotipo.png",
+        "membership_level": "Plata",
+        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+
+      {
+        "name": "Analítica de Datos S.A. de C.V.",
+        "address": "Calzada del Ébano #404, Col. Datatown, Dolores Hidalgo, Gto., México",
+        "phone": "+52 473-555-6789",
+        "website": "http://www.analitica-datos.com",
+        "image": "datos_logotipo.jpg",
+        "membership_level": "Bronce",
+        "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ]
+  }
+  
+  
