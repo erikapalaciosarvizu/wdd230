@@ -400,6 +400,43 @@ input[type="submit"]:hover {
   margin-bottom: 20px;
 }
 
+/* DIRECTORY */
+
+.view-toggle {
+  text-align: center;
+  margin: 20px;
+}
+
+.member-card {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 100%; /* todos los contenedores tengan la misma altura */
+}
+
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Hace que la lista ocupe el espacio disponible entre el encabezado y el pie de página */
+}
+
+.list-view .member-card {
+  width: 100%;
+}
+.directory-title {
+  text-align: center;
+  margin: 20px;
+}
+
 /* RESPONSIVE FORM STYLES */
 @media (max-width: 768px) {
   .form-container {

@@ -42,11 +42,17 @@
          <button id="darkModeToggle">Dark mode</button>     
     </header>
 
-    <h1 class="business-title"> Business Directory</h1>
-<main>
+    <h1 class="directory-title">Business Directory</h1>
 
-    <script src="data/members.json"></script>
-</main>
+    <div class="view-toggle">
+        <label for="grid-view">Grid View</label>
+        <input type="radio" id="grid-view" name="view" checked>
+        <label for="list-view">List View</label>
+        <input type="radio" id="list-view" name="view">
+      </div>
+  
+    <main id="members-container" class="grid-view">
+    </main>
     <footer>
         <div class="footer-row">
             <p>Dolores Hidalgo Chamber of Commerce</p>
@@ -59,7 +65,9 @@
         <div class="last_modified">
             <p>&copy;  <span id="year"></span> | Erika Palacios Arvizu | Mexico |  This document was last modified: <span id="lastModified"></span></p>
         </div>
+        <script src="scripts/directory.js"></script>
         <script src="scripts/getdateschamber.js"></script>
+
     </footer>
 </body>
 </html>
