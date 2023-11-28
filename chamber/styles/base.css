@@ -417,7 +417,7 @@ input[type="submit"]:hover {
 
 .grid-view {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
 }
 
@@ -429,9 +429,6 @@ input[type="submit"]:hover {
   flex-grow: 1; /* Hace que la lista ocupe el espacio disponible entre el encabezado y el pie de página */
 }
 
-.list-view .member-card {
-  width: 100%;
-}
 .directory-title {
   text-align: center;
   margin: 20px;
