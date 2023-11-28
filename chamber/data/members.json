@@ -5,10 +5,11 @@
       "address": "Av. Principal #123, Col. Centro, Dolores Hidalgo, Gto., México",
       "phone": "+52 418555-1234",
       "website": "http://www.muebleriazax.mx",
-      "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100083170346616&tbnid=Lf-qJTdl2ZxoIM&vet=12ahUKEwjtuLj21OCCAxVoKtAFHXs1DukQMygAegQIARA1..i&imgrefurl=https%3A%2F%2Fm.facebook.com%2Fp%2FZAX-Muebler%25C3%25ADas-100083170346616%2F&docid=zmFGAF_J0UgH4M&w=600&h=600&q=mueblerias%20zax&ved=2ahUKEwjtuLj21OCCAxVoKtAFHXs1DukQMygAegQIARA1",
+      "image": "https://drive.google.com/drive/u/0/my-drive",
       "membership_level": "Gold"
 
     },
+
     {
       "name": "REGALOS Y ACCESORIOS EL DIVAN",
       "address": "Calle Roble #456, Col. Reforma, Dolores Hidalgo, Gto., México",
@@ -18,6 +19,7 @@
       "membership_level": "Silver"
 
     },
+    
     {
       "name": "HOTEL EL RELICARIO",
       "address": "De Los Heroes 12, La Erre, Dolores Hidalgo, Guanajuato, México",
@@ -28,7 +30,7 @@
     },
 
     {
-      "name": "Restaurante La Casona",
+      "name": "RESTAURANTE LA CASONA",
       "address": "Guanajuato 9, La Erre, Dolores Hidalgo, Guanajuato, México",
       "phone": "+52 (418)185-0112",
       "website": "http://www.lacasona.mx",
@@ -52,8 +54,7 @@
       "phone": "+52 473-555-2345",
       "website": "http://www.nanapancha-pizza.mx",
       "image": "nanapancha_logotipo.png",
-      "membership_level": "Bronze",
-      "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "membership_level": "Bronze"
     },
 
     {
@@ -62,8 +63,8 @@
       "phone": "+52 473-555-6789",
       "website": "http://www.lastortugas-pizza.com",
       "image": "lastortugas_logotipo.jpg",
-      "membership_level": "Gold",
-      "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "membership_level": "Gold"
+
     }
   ]
 }
