@@ -475,8 +475,11 @@ input[type="submit"]:hover {
 .member-card p {
   font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
-  color: #444; /* Cambia el color del texto según tus preferencias */
-  margin: 20px;
+  color: #444;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 
   padding: 3px;
 }
