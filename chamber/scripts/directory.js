@@ -42,8 +42,9 @@ function displayMembers(members) {
     memberCard.appendChild(memberAddress);
     memberCard.appendChild(memberPhone);
     memberCard.appendChild(memberWebsite);
-    memberCard.appendChild(memberImage);
     memberCard.appendChild(memberLevel);
+    memberCard.appendChild(memberImage);
+
 
     membersContainer.appendChild(memberCard);
   });
