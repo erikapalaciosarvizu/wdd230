@@ -9,7 +9,7 @@
                 },
 
                 {
-                    "url": "https://erikapalaciosarvizu.github.io/wdd230/lesson01/media-query.html",
+                    "url": "/lesson01/media-query.html",
                     "title": "Media Query"
                 }
             ]
@@ -107,8 +107,17 @@
                     "title": "The Fetch API"
                 }
             ]
-        }
+        },
 
+        {
+            "lesson" : "10",
+            "links" : [ 
+                {
+                "url": "https://erikapalaciosarvizu.github.io/wdd230/lesson10/weather.html",
+                "title": "Weather API Activity"
+                }
+            ]
+        }
 
     ]
 

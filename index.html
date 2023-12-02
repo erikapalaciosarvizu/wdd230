@@ -43,7 +43,7 @@
         <a href="https://www.byui.edu/" class="nav-link">BYU-Idaho</a>
         <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=spa" class="nav-link">Scripture</a>
     </nav> 
-    <main>
+
             <div class="image-container">
                 <picture>
                     <source srcset="images/hero-small.webp.webp" media="(max-width: 400px)">
@@ -56,32 +56,23 @@
             </div>
         
         
-        <div class="div-activities">
+            <main>
+                <div class="div-activities">
+                    <section class="card" id="learning-activities">
+                        <h3>Learning Activities</h3>
+                    </section>
+
             <section class="card">
-                <h3>Learning Activities</h3>
-                <script src="scripts/links.js"></script>
-
-            </section>
-
-                <section class="card">
-                    <h3> Information</h3>
-                    <script>
-                        (function(d, s, id) {
-                            if (d.getElementById(id)) {
-                                if (window.__TOMORROW__) {
-                                    window.__TOMORROW__.renderWidget();
-                                }
-                                return;
-                            }
-                            const fjs = d.getElementsByTagName(s)[0];
-                            const js = d.createElement(s);
-                            js.id = id;
-                            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-                
-                            fjs.parentNode.insertBefore(js, fjs);
-                        })(document, 'script', 'tomorrow-sdk');
-                        </script>
-                
+                <h3>Information</h3>
+                <main>
+                  <p>Dolores Hidalgo, Guanajuato:  <br/>
+                    <span id="current-temp"></span></p>
+                  <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                  </figure>
+                </main>
+                <script src="scripts/weather.js"></script>
                         <div class="tomorrow"
                            data-location-id="069706"
                            data-language="EN"
@@ -90,34 +81,24 @@
                            data-widget-type="summary"
                            style="padding-bottom:22px;position:relative;"
                         >
-                          <a
-                            href="https://www.tomorrow.io/weather-api/"
-                            rel="nofollow noopener noreferrer"
-                            target="_blank"
-                            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-                          >
-                            <img
-                              alt="Powered by the Tomorrow.io Weather API"
-                              src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-                              width="250"
-                              height="18">
                               <div class="Page-Visits">
                                 <span class="label">Page Visits: <span class="visits"></span></span>
                             </div>
                           </a>
                         </div>
                 </section>
-        </div>
+            </div>
+            <script src="scripts/links.js"></script>
         <!-- iframe es una etiqueta HTML que permite insertar codigo de otras fuentes en mi pagina -->
         <!-- Google (el proveedor, en este caso google) establece sus parametros para el embebido -->
         <div>
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7441.868227469531!2d-100.91608309928883!3d21.155020164382307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b3c037b45da91%3A0x31b943f4e3ce4942!2sDolores%20Hidalgo%20Cuna%20de%20la%20Independencia%20Nacional%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1696134783588!5m2!1ses-419!2smx" 
-            class="google-map"
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7441.868227469531!2d-100.91608309928883!3d21.155020164382307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b3c037b45da91%3A0x31b943f4e3ce4942!2sDolores%20Hidalgo%20Cuna%20de%20la%20Independencia%20Nacional%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1696134783588!5m2!1ses-419!2smx" 
+                class="google-map"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </main>
 
