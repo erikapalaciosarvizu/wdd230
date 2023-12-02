@@ -4,12 +4,12 @@
             "lesson" : "02",
             "links" : [ 
                 {
-                "url": "lesson02/design.html",
+                "url": "https://erikapalaciosarvizu.github.io/wdd230/lesson02/design.html",
                 "title": "Design Principles Document"
                 },
 
                 {
-                    "url": "lesson01/media-query.html",
+                    "url": "https://erikapalaciosarvizu.github.io/wdd230/lesson01/media-query.html",
                     "title": "Media Query"
                 }
             ]
@@ -48,7 +48,7 @@
             "lesson" : "05",
             "links" : [ 
                 {
-                "url": "lesson05/bom.html",
+                "url": "https://erikapalaciosarvizu.github.io/wdd230/lesson05/bom.html",
                 "title": "BoM Favorite Chapters Application"
                 }
             ]
@@ -58,12 +58,12 @@
             "lesson" : "06",
             "links" : [ 
                 {
-                "url": "images/landscape.jpg.webp",
+                "url": "https://erikapalaciosarvizu.github.io/wdd230/images/landscape.jpg.webp",
                 "title": "WebP Image File Format"
                 },
 
                 {
-                    "url": "lesson/responsive-images.html",
+                    "url": "https://erikapalaciosarvizu.github.io/wdd230/lesson/responsive-images.html",
                     "title": "Responsive Images: srcset"
                 }
             ]
@@ -73,7 +73,7 @@
             "lesson" : "07",
             "links" : [ 
                 {
-                "url": "lesson4/bomapi.html",
+                "url": "https://erikapalaciosarvizu.github.io/wdd230/lesson05/bom.html",
                 "title": "Web Storage API - localStorage"
                 }
             ]
@@ -83,7 +83,7 @@
             "lesson" : "08",
             "links" : [ 
                 {
-                "url": "lesson/tablebuild.html",
+                "url": "https://erikapalaciosarvizu.github.io/wdd230/lesson/tablebuild.html",
                 "title": "HTML Tables for Data Presentation"
                 },
 
@@ -103,26 +103,12 @@
                 },
 
                 {
-                    "url": "lesson09/prophets.html",
+                    "url": "https://erikapalaciosarvizu.github.io/wdd230/lesson09/prophets.html",
                     "title": "The Fetch API"
                 }
             ]
-        },
+        }
 
-        {
-            "lesson" : "10",
-            "links" : [ 
-                {
-                "url": "",
-                "title": ""
-                },
-
-                {
-                    "url": "",
-                    "title": ""
-                }
-            ]
-        },
 
     ]
 
