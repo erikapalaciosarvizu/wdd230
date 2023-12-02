@@ -16,7 +16,11 @@ function displayLinks(weeks) {
         week.links.forEach(link => {
             const p = document.createElement('p');
             const a = document.createElement('a');
-            a.href = `${baseURL}/${link.url}`;
+
+            // Asegúrate de que baseURL no tenga una barra diagonal al final
+            const baseURLWithoutTrailingSlash = baseURL.endsWith('/') ? baseURL.slice(0, -1) : baseURL;
+
+            a.href = `${baseURLWithoutTrailingSlash}/${link.url}`;
             a.textContent = `${week.lesson}: ${link.title}`;
             p.appendChild(a);
             listContainer.appendChild(p);
@@ -27,4 +31,3 @@ function displayLinks(weeks) {
 }
 
 document.addEventListener('DOMContentLoaded', getLinks);
-
