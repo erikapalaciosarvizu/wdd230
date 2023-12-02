@@ -7,24 +7,40 @@ async function getLinks() {
     displayLinks(data.lessons);
 }
 
+function isAbsoluteURL(url) {
+    // Verifica si la URL ya es una URL absoluta
+    return /^https?:\/\//i.test(url);
+}
+
 function displayLinks(weeks) {
     const activitiesList = document.getElementById('learning-activities');
     const listContainer = document.createElement('div'); // Contenedor para la lista
     listContainer.className = 'activities-list-container'; // Clase para el contenedor
 
     weeks.forEach(week => {
-        week.links.forEach(link => {
-            const p = document.createElement('p');
+        const p = document.createElement('p');
+        p.textContent = `${week.lesson}: `;
+
+        week.links.forEach((link, index) => {
             const a = document.createElement('a');
+            a.textContent = link.title;
 
-            // Asegúrate de que baseURL no tenga una barra diagonal al final
-            const baseURLWithoutTrailingSlash = baseURL.endsWith('/') ? baseURL.slice(0, -1) : baseURL;
+            // Verifica si la URL es absoluta antes de concatenar la baseURL
+            a.href = isAbsoluteURL(link.url) ? link.url : `${baseURL}/${link.url}`;
 
-            a.href = `${baseURLWithoutTrailingSlash}/${link.url}`;
-            a.textContent = `${week.lesson}: ${link.title}`;
+            a.addEventListener('click', function (event) {
+
+            });
             p.appendChild(a);
-            listContainer.appendChild(p);
+
+            // '|' 
+            if (index < week.links.length - 1) {
+                const separator = document.createTextNode(' | ');
+                p.appendChild(separator);
+            }
         });
+
+        listContainer.appendChild(p);
     });
 
     activitiesList.appendChild(listContainer);
