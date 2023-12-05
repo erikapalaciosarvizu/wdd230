@@ -19,6 +19,16 @@
     <meta property="og:url" content="https://erikapalaciosarvizu.github.io/wdd230/chamber/">
 </head>
 <body>
+
+    <!--Add a banner on the home page that invites visitors and users to attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m.-->
+    <section class="meet-and-greet-banner" id="meetAndGreetBanner">
+        <div class="container">
+            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+            <button id="closeBannerBtn" onclick="closeBanner()">Close</button>
+        </div>
+    </section>
+
+
     <header class="hero">
         <h2 class="nav_title-page">Chamber of Commerce Dolores Hidalgo</h2>
         <button id="abrir" class="abrir-menu">&#9776;</button>
@@ -63,9 +73,15 @@
         </div>
         <div class="events-weather_column column2">
             <h2 class="subtitle">Weather</h2>
-            <div id="ww_13b476a03b476" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl6031"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://wetterlang.de/koln_wetter_14_tage/" id="ww_13b476a03b476_u" target="_blank">wetterlang.de</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_13b476a03b476"></script>
-            <script async src="https://app2.weatherwidget.org/js/?id=ww_13b476a03b476"></script>
-        </div>       
+            <p>Dolores Hidalgo, Guanajuato: <br/>
+              <span id="current-temp"></span>
+            </p>
+            <figure>
+              <figcaption></figcaption>
+              <img id="weather-icon" src="" alt="">
+            </figure>
+          </div> 
+        <script src="scripts/chamberweather.js"></script>    
     </section>
 
     <div class="container-main">
@@ -88,7 +104,7 @@
         <article class="article_cards">
             <h2 class="subtitle-main">Build a Treefort</h2>
             <p class="about-paragraph">Over 1000 Plans!</p>
-            <p class="about-paragraph">builda@treeford.cpm</p>
+            <p class="about-paragraph">builda@treeford.com</p>
             <p class="about-paragraph">+777-777-777</p>
             <p class="about-paragraph">Website</p>
         </article>

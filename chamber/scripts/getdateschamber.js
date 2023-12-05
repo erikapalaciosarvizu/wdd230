@@ -82,3 +82,22 @@ darkModeToggle.addEventListener("click", () => {
 
 
 document.getElementById("submission_time").value = Date.now();
+
+//BANNER
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Display the meet and greet banner only on Mondays, Tuesdays, and Wednesdays
+  const today = new Date().getDay();
+  if (today >= 1 && today <= 3) {
+      document.getElementById("meetAndGreetBanner").style.display = "block";
+  }
+});
+
+function closeBanner() {
+  document.getElementById("meetAndGreetBanner").style.display = "none";
+}
+
+
+
+
+
