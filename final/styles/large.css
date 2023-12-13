@@ -1,0 +1,33 @@
+@media (min-width: 1024px) {
+  /*MENU*/
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
+    display: flex;
+    background: #0077b6;
+  }
+
+  .menu a {
+    border: none;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .menu a:hover {
+    background: #03045e;
+  }
+
+  /*BAR*/
+  .content {
+    width: 1000px;
+  }
+
+  #banner img {
+    margin-top: -200px;
+  }
+}
