@@ -18,4 +18,9 @@
     height: auto;
     margin-top: -100px;
   }
+
+  /*contact info home*/
+  .container-info {
+    padding: 20px;
+  }
 }
