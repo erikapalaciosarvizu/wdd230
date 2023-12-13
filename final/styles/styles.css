@@ -306,13 +306,3 @@ button:hover {
   margin-bottom: 10px;
   color: #555;
 }
-
-@media screen and(max-width: 768px) {
-  .container-info {
-    padding: 20px;
-  }
-
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
-}

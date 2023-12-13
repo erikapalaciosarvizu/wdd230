@@ -6,6 +6,15 @@
   #banner a {
     margin-top: 25px;
   }
+
+    .container-info {
+      padding: 20px;
+    }
+  
+    .contact-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 @media (min-width: 768px) {
