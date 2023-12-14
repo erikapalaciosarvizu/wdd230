@@ -5,7 +5,7 @@
             "maxPersons": 1,
             "halfDay": {"reservation": 20, "walkIn": 30},
             "fullDay": {"reservation": 25, "walkIn": 35},
-            "imageurl": "https://cdn-fastly.motorcycle.com/media/2023/04/13/11467201/2013-honda-metropolitan-review-motorcycle-com.jpg?size=720x845&nocrop=1"
+            "imageurl": "images/honda-metro-scooter.webp"
         },
 
         {
