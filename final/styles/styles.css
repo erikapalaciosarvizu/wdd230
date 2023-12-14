@@ -27,6 +27,12 @@ header {
   margin: auto;
 }
 
+.content.home-page {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 h1 {
   float: left;
 }
@@ -216,7 +222,7 @@ footer .content {
 
 #rentals-summary div {
   text-align: center;
-  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  margin-top: 20px; /* Ajusta el margen superior*/
 }
 
 #rentals-summary div a {
@@ -309,9 +315,9 @@ body.reservation-page .reservation-form form textarea {
 
 .container-info {
   max-width: 800px;
-  margin: 20px auto; /* Ajusta el margen general */
-  padding: 20px; /* Añade relleno alrededor de la sección */
-  overflow: hidden; /* Soluciona problemas de colapso de márgenes con los elementos flotantes */
+  margin: 20px auto;
+  padding: 20px;
+  overflow: hidden;
 }
 
 .reservation-form {
@@ -453,7 +459,7 @@ form {
 .rental-info h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  font-family: "Roboto", Geneva, Tahoma, sans-serif; /* Cambia la fuente a Roboto */
+  font-family: "Roboto", Geneva, Tahoma, sans-serif;
 }
 
 .rental-info p {
@@ -493,5 +499,15 @@ caption {
 @media (max-width: 768px) {
   .rentals-container article {
     width: 100%;
+  }
+
+  #rentals-summary .content {
+    display: flex;
+    justify-content: space-around; /* Use space-around to distribute the items evenly */
+    flex-wrap: wrap;
+  }
+
+  #rentals-summary article {
+    width: 30%; /* Adjust the width as needed */
   }
 }
