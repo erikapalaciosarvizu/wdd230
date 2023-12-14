@@ -1,52 +1,59 @@
 {
     "rentals": [
-        {
-            "type": "Honda Metro Scooter",
-            "maxPersons": 1,
-            "halfDay": {"reservation": 20, "walkIn": 30},
-            "fullDay": {"reservation": 25, "walkIn": 35},
-            "imageurl": "images/honda-metro-scooter.webp"
-        },
-
-        {
-            "type": "Honda Dio Scooter",
-            "maxPersons": 2,
-            "halfDay": {"reservation": 30, "walkIn": 35},
-            "fullDay": {"reservation": 40, "walkIn": 45},
-            "imageurl": "https://images.ctfassets.net/8zlbnewncp6f/2siFPllfVCGLoihgHCcBSL/f819d918a830f5f04d2e40c148ef8824/Honda_DIO__4_.jpg"
-        },
-
-        {
-            "type": "Honda PCX150 Scooter",
-            "maxPersons": 2,
-            "halfDay": {"reservation": 40, "walkIn": 45},
-            "fullDay": {"reservation": 50, "walkIn": 55},
-            "imageurl": "https://mx.e-scooter.co/i/ho/nd/honda-pcx-electric/full/2181129eng-pcx-electric_01.jpg"
-        },
-
-        {
-            "type": "Honda Pioneer ATV",
-            "maxPersons": 4,
-            "halfDay": {"reservation": 50, "walkIn": 60},
-            "fullDay": {"reservation": 70, "walkIn": 80},
-            "imageurl": "https://frasermotorcycles.com.au/cdn/shop/products/Pioneer_1000-5_1_1200x.png?v=1644365290"
-        },
-
-        {
-            "type": "Jeep Wrangler - 4 door with a/c",
-            "maxPersons": 5,
-            "halfDay": {"reservation": 70, "walkIn": 85},
-            "fullDay": {"reservation": 100, "walkIn": 125},
-            "imageurl": "https://medias.fcacanada.ca/jellies/renditions/2023/800x510/CC23_JLJP74_2TN_PX8_APA_XXX_XXX_XXX.ad7250fbc03d6dd55afcea7040277603.png"
-        },
-
-        {
-            "type": "Jeep Wrangler - 2 door",
-            "maxPersons": 4,
-            "halfDay": {"reservation": 60, "walkIn": 70},
-            "fullDay": {"reservation": 85, "walkIn": 90},
-            "imageurl": "https://i.pinimg.com/736x/41/69/2a/41692ab70bba3e6d0f4f88be74f24504.jpg"
-        }
-
+      {
+        "type": "Honda Metro Scooter",
+        "maxPersons": 1,
+        "halfDayReservation": 20,
+        "fullDayReservation": 30,
+        "halfDayWalkIn": 25,
+        "fullDayWalkIn": 35,
+        "image": "images/honda-metro-scooter.webp"
+      },
+      {
+        "type": "Honda Dio Scooter",
+        "maxPersons": 2,
+        "halfDayReservation": 30,
+        "fullDayReservation": 40,
+        "halfDayWalkIn": 35,
+        "fullDayWalkIn": 45,
+        "image": "https://images.ctfassets.net/8zlbnewncp6f/2siFPllfVCGLoihgHCcBSL/f819d918a830f5f04d2e40c148ef8824/Honda_DIO__4_.jpg"
+      },
+      {
+        "type": "Honda PCX150 Scooter",
+        "maxPersons": 2,
+        "halfDayReservation": 40,
+        "fullDayReservation": 50,
+        "halfDayWalkIn": 45,
+        "fullDayWalkIn": 55,
+        "image": "https://mx.e-scooter.co/i/ho/nd/honda-pcx-electric/full/2181129eng-pcx-electric_01.jpg"
+      },
+      {
+        "type": "Honda Pioneer ATV",
+        "maxPersons": 4,
+        "halfDayReservation": 50,
+        "fullDayReservation": 70,
+        "halfDayWalkIn": 60,
+        "fullDayWalkIn": 80,
+        "image": "https://frasermotorcycles.com.au/cdn/shop/products/Pioneer_1000-5_1_1200x.png?v=1644365290"
+      },
+      {
+        "type": "Jeep Wrangler - 4 door with a/c",
+        "maxPersons": 5,
+        "halfDayReservation": 70,
+        "fullDayReservation": 100,
+        "halfDayWalkIn": 85,
+        "fullDayWalkIn": 125,
+        "image": "https://medias.fcacanada.ca/jellies/renditions/2023/800x510/CC23_JLJP74_2TN_PX8_APA_XXX_XXX_XXX.ad7250fbc03d6dd55afcea7040277603.png"
+      },
+      {
+        "type": "Jeep Wrangler - 2 door",
+        "maxPersons": 4,
+        "halfDayReservation": 60,
+        "fullDayReservation": 85,
+        "halfDayWalkIn": 70,
+        "fullDayWalkIn": 90,
+        "image": "https://i.pinimg.com/736x/41/69/2a/41692ab70bba3e6d0f4f88be74f24504.jpg"
+      }
     ]
-}
+  }
+  

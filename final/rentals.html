@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Reservations</title>
     <link rel= "stylesheet" href="styles/styles.css">
     <link rel= "stylesheet" href="styles/fontello.css">
     <link rel= "stylesheet" href="styles/large.css">
@@ -15,8 +15,9 @@
     <meta property="og:description" content="This is Erika Palacios Arvizu's final project for the course WDD 230 - Web Frontend Development.">
     <meta property="og:image" content="https://blog.dolphindiscovery.com.mx/wp-content/uploads/2020/05/234096766.jpg">
     <meta property="og:url" content="https://erikapalaciosarvizu.github.io/wdd230/final/index.html">
+    <script defer src="scripts/prices.js"></script>
 </head>
-<body>
+<body class="rental-page">
     <header>
         <div class="content">
         <h1 class="logo">Motor Scooter Rental</h1>
@@ -32,60 +33,109 @@
         </div>
     </header>
 
-    <div class="container">
-        <h1>Rentals Page</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Type</th>
-                    <th>Max Persons</th>
-                    <th>Half Day (Reservation)</th>
-                    <th>Walk-In (Half Day)</th>
-                    <th>Full Day (Reservation)</th>
-                    <th>Walk-In (Full Day)</th>
-                    <th>Image</th>
-                </tr>
-            </thead>
-            <tbody>
 
-                
-                <div class="container">
-                    <h1>Rentals Page</h1>
-                    <table id="rentals-table">
-                      <thead>
-                        <tr>
-                          <th>Type</th>
-                          <th>Max Persons</th>
-                          <th>Half Day (Reservation)</th>
-                          <th>Walk-In (Half Day)</th>
-                          <th>Full Day (Reservation)</th>
-                          <th>Walk-In (Full Day)</th>
-                          <th>Image</th>
-                        </tr>
-                      </thead>
-                      <tbody id="rentals-tbody"></tbody>
-                    </table>
-                  </div>
-            
-                <script src="scripts/rentals.js"></script>
-
-
-<footer>
-    <div class="content">
-        <p class="copy">Motor Scooter Rental &copy; 2023</p>
-        <div class="socials">
-            <a class="icon-facebook" href="https://es-la.facebook.com/"></a>
-            <a class="icon-twitter" href="https://twitter.com/"></a>
-            <a class="icon-instagram" href="https://www.instagram.com/"></a>
+    <section id="rentals-summary">
+        <div class="content">
+            <h3>Rental Options</h3>
+            <div class="rentals-container"></div>
         </div>
+    </section>
 
-        <div class="contact-info">
-            <h3> Contact Information</h3>
-            <p>📞 +52 418 159 6236</p>
-            <p>✉️ scooterental@cozumel.com</p>
-            <p>📍 149 Street, Cozumel Mexico</p>
+    <table>
+        <caption>Max Rental Pricing</caption>
+        <thead>
+          <tr>
+            <th colspan="2"></th>
+            <th colspan="2">Reservation</th>
+            <th colspan="2">Walk-In</th>
+          </tr>
+          <tr>
+            <th>Rental Type</th>
+            <th>Max. Persons</th>
+            <th>Half Day (3 hrs)</th>
+            <th>Full Day</th>
+            <th>Half Day (3 hrs)</th>
+            <th>Full Day</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Honda Metro Scooter</td>
+            <td>1</td>
+            <td>$20</td>
+            <td>$30</td>
+            <td>$25</td>
+            <td>$35</td>
+          </tr>
+          <tr>
+            <td>Honda Dio Scooter</td>
+            <td>2</td>
+            <td>$30</td>
+            <td>$40</td>
+            <td>$35</td>
+            <td>$45</td>
+          </tr>
+          <tr>
+            <td>Honda PCX150 Scooter</td>
+            <td>2</td>
+            <td>$40</td>
+            <td>$50</td>
+            <td>$45</td>
+            <td>$55</td>
+          </tr>
+          <tr>
+            <td>Honda Pioneer ATV</td>
+            <td>4</td>
+            <td>$50</td>
+            <td>$70</td>
+            <td>$60</td>
+            <td>$80</td>
+          </tr>
+          <tr>
+            <td>Jeep Wrangler - 4 door with a/c</td>
+            <td>5</td>
+            <td>$70</td>
+            <td>$100</td>
+            <td>$85</td>
+            <td>$125</td>
+          </tr>
+          <tr>
+            <td>Jeep Wrangler - 2 door</td>
+            <td>4</td>
+            <td>$60</td>
+            <td>$85</td>
+            <td>$70</td>
+            <td>$90</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    
+
+    <footer>
+        <div class="content">
+            <p class="copy">Motor Scooter Rental &copy; 2023</p>
+            <div class="socials">
+                <a class="icon-facebook" href="https://es-la.facebook.com/"></a>
+                <a class="icon-twitter" href="https://twitter.com/"></a>
+                <a class="icon-instagram" href="https://www.instagram.com/"></a>
+            </div>
+            <div class="contact-info">
+                <h3> Contact Information</h3>
+                <p>📞 +52 418 159 6236</p>
+                <p>✉️ scooterental@cozumel.com</p>
+                <p>📍 149 Street, Cozumel Mexico</p>
+            </div>
         </div>
-    </div>
-</footer>
-</body>
-</html>
+    </footer>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
