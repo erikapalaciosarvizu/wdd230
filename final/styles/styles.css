@@ -292,6 +292,27 @@ footer .content {
 }
 
 /*RESERVATIONS SECTION*/
+body.reservation-page {
+  background-color: #d7e3fc;
+}
+
+body.reservation-page .reservation-form form {
+  background-color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title-reservation {
+  text-align: center;
+}
+
+body.pagina-especifica .reservation-form form label,
+body.pagina-especifica .reservation-form form input,
+body.pagina-especifica .reservation-form form select,
+body.pagina-especifica .reservation-form form textarea {
+  color: #000;
+}
+
 .container-info {
   max-width: 800px;
   margin: 0 auto;
@@ -299,69 +320,63 @@ footer .content {
 }
 
 .reservation-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-gap: 20px;
 }
 
 form {
-  border: 1px solid #445ba9;
-  border-radius: 10px;
-  padding: 0.5rem 2%;
+  border: 1px solid #979dac;
+  border-radius: 8px;
+  padding: 20px;
 }
 
 legend {
-  color: #445ba9;
-  margin: 0 1rem;
-  padding: 0 0.5rem;
+  color: #333; /*color del texto de leyenda */
+  margin: 0;
+  padding: 0;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
   padding-top: 1rem;
-  color: #000;
+  color: #000; /*color del texto de la etiqueta */
   font-size: 17px;
   margin: 10px;
-  font-family: Roboto, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", Geneva, Tahoma, sans-serif;
 }
 
 input,
 select,
 textarea {
-  -webkit-appearance: none;
-  display: block;
-  font-size: 1rem;
-  border: solid 1px #999;
-  border-radius: 4px;
-  padding: 0.75rem;
-  color: #555;
   width: 100%;
-  max-width: 20rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #caf0f8;
+  color: #333;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px #bbb;
 }
 
 button {
+  display: inline-block;
+  padding: 12px 24px;
   background-color: #023e8a;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 1rem;
-  padding: 0.75rem 1.5rem;
-  margin: 0 0 2rem 2%;
-  width: 96%;
-  max-width: 20rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 button:hover {
   background-color: #03045e;
-}
-
-input:required {
-  border-left: rgb(151, 10, 10) solid 6px;
-}
-
-input:required:valid {
-  border-left: rgb(73, 192, 73) solid 6px;
 }
