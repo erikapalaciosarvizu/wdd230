@@ -308,8 +308,9 @@ body.reservation-page .reservation-form form textarea {
 
 .container-info {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 20px auto; /* Ajusta el margen general */
+  padding: 20px; /* Añade relleno alrededor de la sección */
+  overflow: hidden; /* Soluciona problemas de colapso de márgenes con los elementos flotantes */
 }
 
 .reservation-form {
@@ -417,6 +418,47 @@ form {
   object-fit: cover; /* Para mantener la proporción de la imagen y recortar si es necesario */
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+.rental-info {
+  width: 40%;
+  margin-right: 5%;
+  float: left;
+}
+
+.rental-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.rental-info p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/*Rental Services and Agreements*/
+.reservation-form {
+  width: 55%;
+  float: left;
+}
+
+.rental-info {
+  width: 40%;
+  margin-right: 5%;
+  float: left;
+  margin-top: 70px;
+}
+
+.rental-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Roboto", Geneva, Tahoma, sans-serif; /* Cambia la fuente a Roboto */
+}
+
+.rental-info p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: justify; /* Justifica el texto */
 }
 
 /*TABLA EN RENTALS*/
