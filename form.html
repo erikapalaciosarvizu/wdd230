@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content= "This is Erika Palacios Arvizu's course assignment portal for the course WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Erika Palacios Arvizu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika Palacios Arvizu- WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+    <link rel="stylesheet" href="styles/media-query-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Erika Palacios Arvizu- WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is Erika Palacios Arvizu's course assignment portal for the course WDD 230 - Web Frontend Development.">
+    <meta property="og:image" content="https://www.elsoldepuebla.com.mx/circulos/turismo/n7o8qu-panoramica-de-dolores-hidalgo.jpg/alternates/LANDSCAPE_768/Panor%C3%A1mica%20de%20Dolores%20Hidalgo.jpg">
+    <meta property="og:url" content="https://erikapalaciosarvizu.github.io/wdd230/index.html">
+     
+</head>
+
+<body>
+    <span class = "ham-button" onclick="openHamMenu()">&#9776;</span> <!-- Una etiqueta que se usa para interactuar con JS (span,button,a,li)-->
+    <div id="mySidenav" class="sidenav">  <!--La funcion openHamMenu se puede llamar como yo quiera-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./lesson03/chamber-site-plan.html" class="nav-link">Site Plan</a>
+        <a href="./chamber/index.html" class="nav-link">Chamber</a>
+        <a href="https://www.byui.edu/" class="nav-link">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=spa" class="nav-link">Scripture</a>
+    </div>
+
+    <header> 
+        <h1> Erika Palacios Arvizu</h1>
+        <img src="images/myphoto.webp" alt="Profile Photo">
+    </header>
+        
+    <nav class="erika-rules nav-desktop">
+        <a href="./index.html">Home</a>
+        <a href="./lesson03/chamber-site-plan.html" class="nav-link">Site Plan</a>
+        <a href="./chamber/index.html" class="nav-link">Chamber</a>
+        <a href="https://www.byui.edu/" class="nav-link">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=spa" class="nav-link">Scripture</a>
+    </nav> 
+
+    <main>
+        <form id="myForm" action="record.html" method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Your_username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder=" Must be at least eight 8 characters long and can only be alpha-numeric" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Must be at least eight 8 characters long and can only be alpha-numeric" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="yourname@byu.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address">
+            <span id="emailError" class="error"></span>
+
+            <label for="pageRating">Page Rating:</label>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1">
+            <span id="ratingValue">5</span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script src="scripts/scriptsform.js"></script>
+
+    <footer class="footer-custom">
+        <p>&copy;  <span id="year"></span> | Erika Palacios Arvizu | Mexico</p>
+        <p>This document was last modified:</p>
+        <p id="demo"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+
+</body>
+</html>

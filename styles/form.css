@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #800e13;
+  --background-color: #ecf0f1;
+  --text-color: #000;
+  --range-color: #27ae60;
+}
+
+body {
+  font-family: Roboto, "Arial", sans-serif;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button {
+  background-color: #800e13;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #800e13;
+}
+
+.error {
+  color: #800e13;
+  font-size: 12px;
+  margin-top: 5px;
+}
