@@ -290,26 +290,18 @@ footer .content {
   font-size: 1.4em;
   margin-bottom: 10px;
 }
-
 /*RESERVATIONS SECTION*/
-body.reservation-page {
-  background-color: #d7e3fc;
-}
 
 body.reservation-page .reservation-form form {
-  background-color: #fff;
+  background-color: #caf0f8; /* COLOR DEL FORM*/
   max-width: 600px;
   margin: 0 auto;
 }
 
-.title-reservation {
-  text-align: center;
-}
-
-body.pagina-especifica .reservation-form form label,
-body.pagina-especifica .reservation-form form input,
-body.pagina-especifica .reservation-form form select,
-body.pagina-especifica .reservation-form form textarea {
+body.reservation-page .reservation-form form label,
+body.reservation-page .reservation-form form input,
+body.reservation-page .reservation-form form select,
+body.reservation-page .reservation-form form textarea {
   color: #000;
 }
 
@@ -324,14 +316,8 @@ body.pagina-especifica .reservation-form form textarea {
   grid-gap: 20px;
 }
 
-form {
-  border: 1px solid #979dac;
-  border-radius: 8px;
-  padding: 20px;
-}
-
-legend {
-  color: #333; /*color del texto de leyenda */
+.legend {
+  color: #333;
   margin: 0;
   padding: 0;
 }
@@ -356,7 +342,7 @@ textarea {
   padding: 12px;
   border-radius: 8px;
   border: none;
-  background-color: #caf0f8;
+  background-color: #fff;
   color: #333;
 }
 
@@ -379,4 +365,13 @@ button {
 
 button:hover {
   background-color: #03045e;
+}
+form {
+  border: 1px solid #979dac;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.title-reservation {
+  text-align: center; /*centrar titulo*/
 }
